@@ -16,14 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from django.views.generic.base import TemplateView
 from delta.views import *
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('delta/', TemplateView.as_view(template_name='delta.html')),
+    re_path(r".*", TemplateView.as_view(template_name='delta.html'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()

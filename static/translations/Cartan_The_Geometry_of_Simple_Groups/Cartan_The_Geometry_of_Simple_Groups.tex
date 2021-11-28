@@ -1,0 +1,481 @@
+%% LyX 2.3.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{amsmath}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\title{The Geometry of Simple Groups}
+\author{Élie Cartan}
+\maketitle
+
+\subsection*{Introduction}
+
+In a recent paper\footnote{{\'E}. Cartan, \emph{La G{\'e}om{\'e}trie des groupes de transformations}.
+(J. Math. pures et appl., t. 6, 1927, pp.1-119).} developing and supplementing an earlier article published in collaboration
+with J.A. Shouten\footnote{{\'E}. Cartan and J.A. Schouten, On the Geometry of the group-manifold
+of simple and semi-simple groups. (Proc. Akad. Amsterdam, t. 29, 1926,
+pp. 803-815).}, I studied the spaces with affine connection, without curvature or
+torsion-free, representing continuous transformation groups. This
+study applied to the most general groups, and it was local. In the
+case of simple groups, the representative torsion-free spaces are
+Riemannian, either complex or real (with $ds$ definite or indefinite).
+Complex spaces represent simple groups with complex parameters; real
+spaces represent simple groups with real parameters, unitary (if $ds$
+is definite), or non-unitary (if $ds$ is indefinite). The last two
+cases are distinguished from each other by the property that the space
+is either closed or open.\\
+\\
+Riemann spaces representative of simple real unitary groups fall into
+a more general and very important category of Riemann spaces, characterized
+by the property that their Riemannian curvature is preserved by parallel
+transport; their study is reduced to the study of those which I have
+called \emph{irreducible} and which all relate to simple groups\footnote{The determination of all spaces is made in a paper, the first part
+of which has just appeared. (Bull. Soc. Math. de France, t. 54, 1924,
+pp. 214-264). See also {\'E}. Cartan,\emph{ Sur les espaces de Riemann
+dans lesquels le transport par parall{\'e}lisme conserve la courbure}.
+(Rend. Acc. Lincei, (6), t. $3^1$, 1926, pp. 544-547).}. In each of these irreducible spaces, the Riemannian curvature has
+the same sign everywhere; in the same class there are both positive
+curvature spaces and negative curvature spaces. Given a simple structure,
+the representative spaces of the corresponding unitary real groups
+have positive curvature; negative curvature spaces of the same class
+are not representative of any group, but their group of displacements
+is isomorphic to the group of the given structure with complex parameters.
+If this is the simple structure with three parameters, the two spaces
+are the three-dimensional spaces with constant curvature, positive
+or negative; the first represents the group of rotations of ordinary
+space; the group of displacements of the second is isomorphic to the
+\emph{complex} homographic group of one variable.\\
+\\
+The detailed study of the most general irreducible Riemann spaces
+is of great interest, both from the point of view of group theory
+and from the geometric point of view. It will be the subject of a
+later brief. In the present memoir I am only concerned with the two
+particular classes mentioned above (spaces representative of simple
+real unitary groups and their correspondents with negative curvature).
+The study made here is no longer local; it relates rather to the properties
+of space coming under the \emph{Analysis Situs}, to the distribution
+of geodesics, to the complete determination of their mixed groups
+of isometry, of their different Klein forms, etc. The questions which
+arise are, moreover, of a very different nature depending on whether
+the space has positive curvature or negative curvature.\\
+\\
+The first introductory chapter is devoted to the topology of simple
+real unitary groups; it has its point of departure in the research
+of Weyl relating to the theory of semi-simple groups\footnote{H. Weyl, \emph{Theorie der Darstellung kontinuierlicher halb-einfacher
+Gruppen durch lineare Transformationen}. (Math. Zeitschr., t. 23,
+1925, pp. 271-309; t. 24, 1925, pp. 328-395).}; the question is taken up in full; Weyl's results are complete and
+the questions which arise are resolved to the end using one of my
+recent papers\footnote{{\'E}. Cartan, \emph{Les tenseurs irr{\'e}ductibles et les groupes
+lin{\'e}aires simples et semi-simples}. (Bull. Sc. Math., $2^{\text{nd}}$
+series, t. 49, 1925, pp. 130-152).}\\
+\\
+Part II is devoted to the spaces of real unitary groups; the distribution
+of geodesics is studied quite completely for the simply connected
+forms of these spaces; it reveals, associated with each point in space,
+the existence of a certain number of \emph{antipodal varieties} (which
+can be reduced to points) which are in a way \emph{necked varieties}
+for the closed geodesics resulting from the given point. There are
+as many as units as the rank of the group.\\
+\\
+Part III is devoted to spaces with negative curvature whose group
+of displacements has a simple complex structure. They are all just
+related. We can thanks to them (and this is what will happen in all
+the other irreducible spaces with negative curvature) to solve important
+problems relating to their group of displacements. I will only point
+out the following result: simple complex groups have, from the point
+of view of Analysis Situs, the same properties as the corresponding
+unitary real groups, and they always admit a simply connected linear
+representative. This theorem itself results from a remarkable mode
+of generation of finite transformations of the complex gorup: to take
+just one example, each complex rotation of ordinary space is decomposable
+in one way and only one into one. real and a rotation of a purely
+imaginary angle around a real axis. Finally, the spaces in question
+also have their importance from a purely geometric point of view,
+but this importance will be manifested above all for the more general
+irreducible spaces with negative curvature.\\
+\\
+I will assume that the fundamental principles of the theory of simple
+groups are known\footnote{In this regard, the reader may refer to my Thesis (Paris, Nony, 1894)
+or to the previously cited paper of Weyl; reading the paper cited
+in footnote (${}^1$), will not be useless either.}.
+
+\section*{Chapter I.}
+
+\section*{The Topology of Simple Unitary Groups}
+
+\subsubsection*{I. The Fundamental Polyhedron of the Adjoint Group}
+
+\textbf{1.} We know\footnote{{\'E}. Cartan, \emph{Les tenseurs irr{\'e}ductibles et les groupes
+lin{\'e}aires simples et semi-simples}. (Bull. Sc. Math., $2^{\text{nd}}$
+series, t. 49, 1925, pp. 135).} that to each type of simple group of order $r$ belongs a real unitary
+form, with $r$ real parameters, characterized by the property that
+the sum of the squares of the characteristic roots of an arbitrary
+infinitesimal transformation is a negative definite quadratic form
+$-\phi(e)$. The unitary groups are, for the four major classes of
+simple groups, respectively isomorphic:\\
+\\
+$A)$ to the unimodular linear group of a positive definite Hermitian
+form \begin{equation*}
+	x_1\bar x_1+x_2\bar x_2+\ldots+x_{l+1}\bar x_{l+1};
+\end{equation*}$B)$ $D)$ to the linear group of a positive definite quadratic form
+in $n=2l+1$ (type B) or $n=2l$ (type D) variables;\\
+\\
+$C)$ to the linear group leaving invariant a definite positive Hermitian
+form; \begin{equation*}
+	x_1\bar x_1+x_2\bar x_2+\ldots+x_{2l}\bar x_{2l};
+\end{equation*}and an outer quadratic form \begin{equation*}
+	[x_1 x_2]+[x_3 x_4]+\ldots+[x_{2l-1}x_{2l}].
+\end{equation*} In the preceding notation, $l$ denotes the \emph{rank} of the group,
+which will be discussed below.\\
+\\
+\textbf{2.} Let $G$ be a simple unitary group, $\Gamma$ its adjoint
+group. $\Gamma$ is a linear group with $r$ real variables \begin{equation*}
+	e_1,e_2,\ldots,e_r,
+\end{equation*} which leaves the positive definite quadratic form $\phi(e)$ invariant.
+Each transformation can be represented by a matrix $T$ of order $r$,
+determinant equal to 1.\\
+\\
+Any matrix $T$ can, in an infinite number of ways, be generated by
+an infinitesimal transformation $Y$ of $\Gamma$. Among the characteristic
+roots of $Y$, $l$ are zero, the other $r-l$ are two-by-two equal
+and opposite; they are linear combinations with integer coefficients
+determined by $l$ of them (called \emph{fundamental}). All these
+roots are purely imaginary: we will designate them, with Weyl, by
+the notation \begin{equation*}
+	2\pi i\phi_\alpha;
+\end{equation*}the quantities $\phi_\alpha$ are the \emph{angular parameters} of
+the transformation $Y$.\\
+\\
+The matrix $T$ generated by $Y$ admits $l$ characteristic roots
+equal to 1, the others are the quantities $e^{2\pi i \phi_\alpha}$.\\
+\\
+\textbf{3.} If an infinitesimal transformation $Y$ is general, that
+is to say does not admit more than $l$ characteristic zero roots,
+there exist $l-1$ other infinitesimal transformations independent
+of each other and independent of $Y$, which enjoy the property of
+commuting among themselves and commuting with $Y$. We thus obtain
+an Abelian subgroup $\gamma$ of order $l$. If \begin{equation*}
+	e_1Y_1+e_2Y_2+\ldots+e_lY_l
+\end{equation*}is the most general infinitesimal transformation of $\gamma$, the
+angular parameters $\phi_\alpha$ are linear forms in $e_1,e_2,\ldots,e_l$
+of which $l$ are linearly independent.\\
+\\
+If we now start from a singular infinitesimal transformation $Y$,
+that is to say admitting more than $l$ characteristic zero roots,
+there exists more than $l$ independent transformations exchangeable
+with $Y$. We can ask ourselves if, among these transformations, there
+exists at least one which is not singular. This is what we will demonstrate.\\
+\\
+Let $Y_1$ be a particular transformation commuting with $Y$; let
+$Y_2$ be a particular transformations commuting with $Y$ and $Y_1$
+(and linearly independent of $Y$ and $Y_1$), and so on. Suppose
+that we can thus find $\lambda$ independent transformations \begin{equation*}
+	Y,Y_1,\ldots,Y_{\lambda-1},
+\end{equation*}commuting among themselves and such that no other transformation of
+the group commutes at the same time with each of them. The characteristic
+$\omega_\alpha$ roots of the transformation \begin{equation*}
+	eY+e_1Y_1+\ldots+e_{\lambda-1}Y_{\lambda-1}
+\end{equation*}are \emph{linear}\footnote{This is because the transformations commute with each other.}
+forms in $e,e_1,\ldots,e_{\lambda-1}$. Among these linear forms,
+there are at least $\lambda$ independent ones; otherwise there would
+exist a non-zero transformation $\sum e_iY_i$ having all its characteristic
+roots zero; this is impossible, since the sum of the squares of the
+characteristic roots of an arbitrary transformation of the group is
+a \emph{definite} form. Of the characteristic roots of an arbitrary
+transformation a minimum of $\lambda$ are independant, this proves,
+by the very definition of the rank, that $\lambda$ is at most equal
+to $l$. But on the other hand $\lambda$ cannot be less than $l$,
+since $l$ of the $\omega_\alpha$ roots are zero and to each linear
+form $\omega_\alpha$ correspond one or more transformations $X$
+such that we have \begin{equation*}
+	\bigg[ \sum e_iY_i,X \bigg]=\omega_\alpha X,
+\end{equation*}\emph{whatever the coefficients} $e,e_1,\ldots,e_{\lambda-1}$. There
+would therefore exist $l-\lambda$ transformations independent of
+$Y$ and commuting with $Y$, which is contrary to the hypothesis.\\
+\\
+The integer $\lambda$ being equal to $l$, and the number of identically
+zero $\omega_\alpha$ linear forms not exceeding $l$, it suffices
+to give the coefficients $e_i$ numerical values not canceling any
+of the non-identically zero $\omega_\alpha$ forms to obtain a \emph{general}
+transformation; the transformation given $Y$ is thus part of the
+$\gamma$ subgroup defined by this general transformation.\\
+\\
+\textbf{4.} Any infinitesimal transformation $Y$ is therefore part
+of at least one abelian subgroup $\gamma$, containing an infinite
+number of general transformations. All the $\gamma$ subgroups are,
+moreover, homologous to each other in the continuous adjoint group
+$\Gamma$ (\footnote{This is because the \emph{general} infinitesimal transformations $Y$,
+each of which defines a $\gamma$ subgroup, form a \emph{connected}
+set; indeed, as we will see in a moment, the singular transformations
+fill, in the domain of the group, one or more manifolds with 3 dimensions
+less than this domain.}), so that any transformation of $\Gamma$ is homologous to a transformation
+of a particular $\gamma$ subgroup.\\
+\\
+That said, let us look at the $l$ fundamental angular parameters
+$\phi_1,\phi_2,\ldots,\phi_l$ of an arbitrary infinitesimal transformation
+as the Cartesian coordinates of a point in a space of $l$ dimensions.
+We will choose the unit vectors of coordinates so that the positive
+definite quadratic form \begin{equation*}
+	\sum_\alpha \phi_\alpha^2
+\end{equation*}represents, to a nearly constant factor, the square, of the distance
+from a point to the origin.\\
+\\
+Any point $M$($\phi_i$) represents an infinitesimal transformation
+of each $\gamma$ subgroup, and consequently an infinite number of
+homologous infinitesimal transformations between them. If none of
+the parameters $\phi_\alpha$ is zero, these transformations are general
+and consequently form a set $\infty^{r-l}$. If $h$ of the parameters
+$\phi_\alpha$ are zero ($h$ even), each transformation represented
+by $M$ is invariant by a subgroup with $l+h$ parameters and therefore
+admits $\infty^{r-l-h}$ homologues.\\
+\\
+Within a given $\gamma$ subgroup, an infinitesimal transformation
+admits a certain number of homologues; their representative points
+are obtained by carrying out on the $r-l$ parameters $\phi_\alpha$
+(regarded as letters) a finite group $\mathcal{G}^\prime$ of substitutions;
+these substitutions preserve the linear relations with integer coefficients
+which exist between the angular parameters\footnote{There can be substitutions enjoying this property without belonging
+to $G^\prime$. See E. Cartan, \emph{Le principe de dualit{\'e} et
+la th{\'e}orie des groupes simples et semi-simples}. (Bull. Sc. Math.,
+2nd series, t. 49, 1925, pp. 365-366).}. Geometrically the group $\mathcal{G}^\prime$, operating on representative
+points $M$, is a group of rotations and symmetries, generated by
+$\frac{r-l}{2}$ symmetries with respect to the hyperplanes $\phi_\alpha=0$
+(\footnote{This interpretation of the group $\mathcal{G}^\prime$ as a group
+of rotations and symmetries, as well as that of its generating operations,
+is due to Weyl, \emph{Theorie der Dartellung kontinuierlicher halb-einfacher
+Gruppen durch lineare Transformationen}. (Math. Zeitschr., 24, 1925,
+pp. 367-371). The group $\mathcal{G}^\prime$ is the group $(S)$
+of Weyl.}).\\
+\\
+If we consider the $\frac{r-l}{2}$ hyperplanes $\phi_\alpha=0$ led
+by the origin, they divide the space into a number of undefined regions
+(polyhedral angles) convex. Each of them represents the \emph{fundamental
+domain} ($D$) of the group $\mathcal{G}^\prime$, and any infinitesimal
+transformation of $\gamma$ is homologous to one transformation and
+only one inside this region. Any convex region, bounded by a certain
+number of $\phi_\alpha=0$ hyperplanes, \emph{and such that no other
+of these hyperplanes crosses it}, can be taken as a fundamental domain.
+We will verify later that all these regions admit exactly $l$ hyperplane
+faces.\\
+\\
+Any point inside the fundamental domain ($D$) represents $\infty^{r-l}$
+homologous infinitesimal transformations; any point located on one
+of its faces, or one of its edges, etc., represents at most $\infty^{r-l-2}$
+homologous transformations.\\
+\\
+\textbf{5.} Moving on to finite transformations, or to the $T$ matrices
+of the $\Gamma$ group. Let $Y$ be one of its infinitesimal generating
+transformations, belonging to a certain $\gamma$ subgroup; we can
+represent $T$ and $Y$ by the same point $M$. Now inside the same
+$\gamma$ subgroup, the matrix $T$ can be generated by an infinite
+number of infinitesimal transformations different from $Y$; they
+are those obtained by adding to the fundamental angular parameters
+$\phi_i$ arbitrary integers. Let us then consider the lattice ($R$)
+of points with integer coordinates $\phi_i$.\\
+\\
+The same matrix $T$ is represented by an infinite number of points,
+homologous among themselves with respect to the lattice ($R$).\\
+\\
+Suppose that $l+2k$ of the characteristic roots of $T$ are equal
+to $1$; we then prove that, $T$ being invariant by a subgroup with
+$l+2k$ parameters of $\Gamma$, there exist $\infty^{r-l-2k}$ matrices
+homologous to $T$. The hypothesis made amounts to saying that, among
+the angular parameters $\phi_\alpha$ of $Y$, $2k$ are integers.
+The matrix $T$ can therefore be invariant by a group larger than
+its generating transformation $Y$.\\
+\\
+\textbf{6.} The set of operations of group $\mathcal{G}^\prime$ and
+of translations $\mathcal{T}$ which leave the lattice ($R$) invariant
+generates a group $\mathcal{G}_1$ of displacements and symmetries.
+Two points $M$ homologous with respect to $\mathcal{G}_1$ represent
+matrices $T$ homologous with respect to $\Gamma$.\\
+\\
+We will now consider the set of hyperplanes ($\Pi$) obtained by equating
+one of the angular parameters $\phi_\alpha$ to an arbitrary integer.
+All these hyperplanes share space in an infinity of convex polyhedra;
+let ($P$) be one of them, which we can suppose to be inside the undefined
+fundamental domain ($D$). We will show that any matrix $T$ can be
+represented by at least one point of ($P$).\\
+\\
+Let us start from the remark, due to Weyl\footnote{Math. Zeitschr., t. 24, 1925, p. 379.},
+that the matrices represented by a given point of the same hyperplane
+($\Pi$), admitting at least $l+2$ characteristic roots equal to
+$1$, form in the space of the group at most an $r-l-2$ dimensional
+manifold; consequently the matrices represented by the different points
+of the hyperplanes ($\Pi$) form a finite number of manifolds with
+\begin{equation*}
+	(r-l-2)+(l-1)=r-3
+\end{equation*} dimensions. It is therefore possible to go from one point to another
+in the space of the group, i.e. to go continuously from any matrix
+$T$ to any other matrix $T^\prime$, avoiding the singular matrices.
+Let $M_0$ be a particular point inside ($P$), let $T_0$ be one
+of the matrices represented by $M_0$, and let $T$ be any matrix.
+By passing from $T_0$ to $T$ in order to avoid singular matrices,
+the corresponding representative point, starting from $M_0$, will
+remain inside ($P$)\footnote{We can rigorously show that when the matrix $T$ varies in a continuous
+way without ever being singular, the representative point $M$ can
+also be followed by continuity, without any ambiguity.}, and consequently there exists indeed inside ($P$) a point $M$
+representative of $T$. In particular the unit matrix must be represented,
+this means that at least one of the vertices of ($P$) belongs to
+the lattice ($R$). We can therefore assume, by one of the translations
+$\mathcal{T}$, that the polyhedron ($P$) has one of its vertices
+at the origin $O$.\\
+\\
+\textbf{7.} We are now in a position, taking Weyl's general point
+of view, to study the topology of the space of the adjoint group $\Gamma$,
+in particular to find out whether there exist in this space any firm
+contours not reducible to a point by continuous deformation.\\
+\\
+TODO\\
+\\
+\textbf{31.} With the isometry group of the simply connected space
+$\mathcal{E}$ being transitive, the study of geodesics from any point
+is reduced to that of geodesics from the point of origin $O$, which
+corresponds to the identical transformation of $G$. These geodesics
+correspond to the different one parameter subgroups of $G$; to look
+for a geodesic joining $O$ to a given point $A$ is to look for an
+infinitesimal transformation generating the finite transformation
+represented by $A$. It follows immediately that \emph{by any two
+points of $\mathcal{E}$ there always passes a geodesic (and even
+an infinity if $l>1$)}. We will leave aside in what follows the case
+$l=1$, which corresponds to the three-dimensional spherical space
+(and to the elliptical space).\\
+\\
+Any direction resulting from $O$ represents an infinitesimal transformation
+of $G$, which belongs at least to an abelian subgroup $\gamma$ (\S
+3). The gamma transformations provide in space $\mathcal{E}$ an $l$-dimensional
+manifold $E_l$ passing through $O$. This manifold has zero Riemannian
+curvature, since the rotation associated with an elementary parallelogram
+whose sides represent the infinitesimal transformations $U$ and $V$
+has the effect of giving, at the vector $X$, the geometric increase
+$[[U,V],X]$, and is everywhere zero if the bracket $[U,V]$ is zero:
+this is the case for any two transformations of $\gamma$.\\
+\\
+The manifold $E_l$ is therefore locally Euclidean; it is moreover
+totally geodesic, since it represents a subgroup of $G$. One can
+analytically define a point $A$ of $E_l$ by the $l$ fundamental
+angular parameters $\phi_1,\ldots,\phi_l$ of the infinitesimal transformation
+$Y$ of $\gamma$ which generates the finite transformation represented
+by $A$; the distance $OA$, measured on the corresponding geodesic,
+is equal, to a nearly constant factor, to the square root of the sum
+$\sum\phi_\alpha^2$ extended to $r-l$ angular parameters. We thus
+see that \emph{the representation used in Chapter I in a Euclidean
+space with $l$ dimensions is nothing more than an application on
+this Euclidean space of the locally Euclidean manifold $E_l$}.\\
+\\
+There is, however, an important difference. The variety $E_l$ is
+not an undefined Euclidean space; if we develop it on the l-dimensional
+Euclidean space, it gives the lattice ($\bar{R}$) of parallelepipedes,
+\emph{each of which fully represents $E_l$}.\\
+\\
+We see from this that any point of $E_l$ can be joined to $O$ by
+an infinite number of geodesics, located entirely in $E_l$, and which
+have for images, in Euclidean space, the lines joining the origin
+$O$ to the different homologous points of a point given with respect
+to the group $\bar{\mathcal{T}}$ of the translations of the network
+($\bar{R}$). Those whose directional parameters are rational are
+closed. All the geodesics, located in $E_l$, joining $O$ to $A$
+are moreover isolated; none cut itself.\\
+\\
+\textbf{32.} Instead of representing $E_l$ by the fundamental parallelepiped
+of the network ($\bar{R}$), it is better to represent it by the polyhedron
+($\mathcal{D}$) introduced in \S 26. The operations of the group
+$G^\prime$ correspond to rotations of the continuous isotropy group
+of $\mathcal{E}$ which bring the variety $E_l$ into coincidence
+with itself, (but without leaving all the points of $E_l$ fixed);
+in each of these rotations, the different ($l+1$)-hedra ($P$) in
+which the polyhedron ($\mathcal{D}$) is decomposed are transformed
+into each other; they are moreover in the same number as the operations
+of $G^\prime$ and each of them is a fundamental domain for the discontinuous
+group $G^\prime$.\\
+\\
+Figure 5 thus represents one of the plane manifolds $E_2$ of the
+simply connected 8-dimensional space of the simple group of type $A$
+of rank 2. The opposite edge of the regular hexagon must be regarded
+as identical, their points corresponding to each other by the translation
+which brings these two edges into coincidence. The three translations
+corresponding to the three pairs of opposite edges generate the group
+$\bar{\mathcal{T}}$ of the translations of the lattice ($\bar R$)
+(it is basically the holonomy group of the Clifford plane $E_2$ with
+respect to the Euclidean plane). The three vertices $O_1$ constitute
+only one point of $E_2$; the same is true of the three $O_2$ vertices.
+The figure highlights three closed geodesics distended from $O$;
+each will pass successively through the points $O_1$ and $O_2$,
+which divide it into three equal parts. We have one of these geodesics
+starting for example from $O$ in the horizontal direction of the
+figure to $O_1$; this geodesic continues with one of the horizontal
+dimensions $O_1$ $O_2$, then ends with the horizontal radius $O_2$
+$O$ which leads back to the starting point. These three geodesics,
+of the same length, intersect in $O$ at angles of $120^\circ$ (if
+we take them in the direction which leads first to point $O_1$).
+Of course, there is an infinite number of other closed geodesics in
+$E_2$, but they are longer.\\
+\\
+Figure 6 shows the domain ($\mathcal{D}$) representative of a variety
+$E_2$ of the simply connected space with 10 dimensions of the simple
+unitary group of the type $B$ of rank 2. The opposite sides of the
+square correspond by translation and must be considered as identical.
+The four vertices of the square represent the same point of $E_2$;
+as for the midpoints of the edges, they represent two distinct points
+$A$ and $A^\prime$. In the figure there are four closed geodesics
+coming from $O$; two of them, which intersect at $O$ at a right
+angle, are divided in their middle by the point $O_1$; two others
+(whose length is the same as the preceding ones in the ratio $\frac{1}{\sqrt{2}}$)
+are divided in their middle, one by point $A$, the other by point
+$A^\prime$. There are also in the figure two other closed geodesics
+passing through $O_1$ and shared in their middle, one by $A$, the
+other by $A^\prime$.\\
+\\
+FIG. 7 represents a variety $E_2$ of the space with 14 dimensions
+of the simple group of type $G$. The vertices of the regular hexagon
+represent two distinct points $A$ and $A^\prime$ of $E_2$; the
+midpoints of the edges represent three other distinct points $B$,
+$B^\prime$, $B^{\prime \prime}$. The figure represents three closed
+geodesics originating from $O$ and passing successively through points
+$A$ and $A^\prime$ which divide them into three equal parts; they
+are on the other hand cut in their middle by one of the points $B$,
+$B^\prime$ or $B^{\prime \prime}$. The figure shows three other
+closed geodesics cut in their middle by one of these three points,
+but passing neither through $A$ nor through $A^\prime$. The compared
+lengths of these two types of geodesics are $3$ and $\sqrt{3}$.\\
+\\
+\textbf{33.} Let us return to the general study of geodesics. If a
+given point $A$ other than $O$ belongs to a single manifold $E_l$,
+all the geodesics joining $O$ to $A$ are in this manifold; they
+are isolated and there is an infinite number of them.\\
+\\
+If the point $A$ belongs to an infinity of manifolds $E_l$, the
+finite transformation of $G$ represented by $A$ is exchangeable
+with more than $l$ independent infinitesimal transformations, that
+is to say $l+\lambda$. We will have the number $\lambda$ by looking
+for how many, among the $r-l$ angular parameters $\phi_\alpha$ of
+$A$, are integers. The point $A$ is then invariant by a subgroup
+$g_{l+\lambda}$ of the continuous group of rotations around $O$.
+It therefore belongs to $\infty^\lambda$ distinct $E_l$ manifolds,
+and in each of them there exists a countably infinite number of geodesics
+joining $O$ to $A$. Suppose that the direction in $O$ of one of
+these geodesics is invariant by a subgroup $g_{l+\lambda}$ of the
+group of rotations around $O$; the corresponding geodesic will belong
+to $\infty^\mu$ distinct $E_l$ varieties. If $\mu=\lambda$, this
+geodesic will be isolated in space $\mathcal{E}$ (among the set of
+geodesics joining $O$ to $A$. If $\mu<\lambda$, this geodesic will
+belong to a continuous variety with $\lambda-\mu+1$ dimensions of
+geodesics joining $O$ to $A$, and this variety will be obtained
+by applying to the given geodesic all the rotations of the group $g_{l+\lambda}$
+which leaves fixed the points $O$ and $A$.\\
+\\
+Finally, \emph{certain geodesics joining $O$ to $A$ may not be isolated};
+this case arises if the group of rotations which leave the point $A$
+invariant is greater than the group of rotations which leave the direction
+in $O$ of the geodesic invariant; the dimension of the continuous
+manifold of which geodesics are a part is the difference increased
+by 1 between the orders of these two groups.
+\end{document}

@@ -1,0 +1,1668 @@
+%% LyX 2.3.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[oneside,english]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amsthm}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+\makeatother
+\usepackage{titlesec}
+\titleformat{\part}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+\usepackage{babel}
+\begin{document}
+\title{On the Structure of Finite and Continuous Transformation Groups}
+\author{Élie Cartan}
+\translator{Jonathan Trousdale}
+\maketitle
+
+\section*{Introduction}
+
+The notion of the \emph{structure} of a finite and continuous transformation
+groups was presented by Lie from the beginning of the research with
+led the great Norwegian geometer to found his theory of groups, the
+theory which, by its fruitfulness, has renewed, so to speak, several
+branches of mathematical science. In his method of solving algebraic
+equations which admit a given group of substitutions, Galois reduces
+the problem to solving a series of auxiliary equations whose number
+and nature depend only on the \emph{structure }of the group of substitutions
+considered. In the same way, Lie reduces the integration of a system
+of partial derivative equations which admits a \emph{finite and continuous}
+group of transformations to the integration of a series of auxiliary
+systems, and the number of these systems, their nature, the way in
+which they relate to each other still depends only on the \emph{structure}
+of the group considered. In another analogous manner, the theory of
+linear differential equations founded by Picard and Vessiot, and more
+generally that of differential equations which admit a \emph{fundamental
+system} of integrals, highlight the importance of the \emph{structure}
+of finite and continuous groups.\\
+\\
+The proper problem of the structure of finite and continuous transformation
+groups could be stated as follows: \emph{Find all the possible structures
+of groups with any number of parameters}; in this order of ideas,
+Lie determined, in 1874, all the structures of the groups with one,
+two, three and four parameters. But if we continue with that approach,
+we would only have an imperfect view of the question, and it is clear
+that the preceding work is only possible and useful if we know beforehand
+a certain number of general laws to guide the research. It is thus
+that Lie has long ago\footnote{\emph{Comptes Rendus de l'Acad. des Sc.}, Christiania, 1874; \emph{Archiv
+for Math. og Nat.}, 1878. t. 3. p.112-116.}, by considerations drawn from his theory of integration of systems
+of partial differential equations, classified groups into \emph{integrable
+and not integrable} and provided the means by which to recognize whether
+a given group is integrable or not. Among the non-integrable groups,
+there are some which play a promenant role, these are those which
+Lie has called \emph{simple}; he has indeed shown that the systems
+of auxiliary differential equations to which the integration of a
+system of equations that admits a finite and continuous group is reduced
+are the equations of a \emph{simple} group\footnote{In particular \emph{Math. Ann.}, t. 25, 1885, a paper by Lie, entitled:
+\emph{Allgemeine Untersuchungen {\"u}ber Differentialgleichungen,
+die eine continuirliche, endliche Gruppe gestatten.}}; also he determined all the structures of simple groups of order
+$r$ whose largest subgroups are of order $r-1$, $r-2$ or $r-3$,\footnote{Lie, Acad. des Sc., Christiania, 1883; \emph{Math. Ann.}, t. 25, loc.
+cit., p. 132-134.} and more recently, using a work of Page\footnote{Leipziger Dissertation, \emph{Amer. Journal}, t. 10 (1888).},
+that of simple groups whose largest subgroups are of order $r-4$.
+At the same time Lie identified four great classes of simple group
+structures, those of the general projective group in $n$ variables,
+of the linear, complex projective group in $2n-1$ variables, and
+those of the projective group of a second degree surface in $2n$
+and $2n-1$ variables\footnote{\emph{Math. Ann.}, t. 25, p. 130 (1885); \emph{Norw. Archiv}, t.10,
+p. 413 (1885); \emph{Leipz. Ber.}, 1889. p. 325.}.\\
+\\
+Shortly after, Engel published two Notes relating to the structure
+of groups in the \emph{Leipziger Berichte}, albeit they were in an
+entirely different vein. In the first of these notes (\emph{Leipz.
+Ber.}, 1886, p. 83-94), he linked the problem of structure to the
+theory of a certain trilinear form; in the second (\emph{Leipz. Ber.},
+1887, p. 89-99), he stated a very interesting theorem proposing the
+existence of a simple subgroup with three parameters within a group
+as a necessary and sufficient condition for the non-integrability
+of such group, and he recently gave a rigorous demonstration\footnote{\emph{Leipz. Ber.}, 1893, p. 360-369.}.\\
+\\
+This was the state of the inquiry when Killing, who had already published
+two memoirs on the theory of groups\footnote{\emph{Erweiterung des Raumbegriffes}, Braunsberg, 1884, and \emph{Zur
+Theorie der Lie'schen Transformationsgruppen}, Braunsberg, 1886.}, published in the \emph{Mathematische Annalen}\footnote{\emph{Die Zusammensetzung der stetigen endlichen Transformationsgruppen};
+erster Theil, \emph{Math. Ann.}, t. 31, p. 252-290 (1888); zweiter
+Theil, \emph{Math. Ann.}, t. 33, p. 1-48 (1889); dritter Theil, \emph{Math.
+Ann.}, t. 34, p. 57-122 (1889); vierter Theil, \emph{Math. Ann.},
+t. 36, p. 161-189 (1890).} a series of extensive works rich in new results. Killing uses there
+the notion of \emph{characteristic equation} of a group, due also
+to Lie, and makes it the basis of his classification of groups according
+to what he calls their \emph{rank}. The most important of his results
+are as follows: \emph{Apart from the four great classes of groups
+found by Lie, there are only five possible structures of simple groups,
+which have respectively }\textbf{14, 52, 78, 133}\emph{ and }\textbf{248}\emph{
+parameters}. Second, \emph{any non-integrable group is either an integrable
+invariant subgroup and a simple subgroup or is made up of simple invariant
+subgroups}. The first result allows us to conceive the possibility
+of establishing all the systems of irreducible differential equations
+to which the integration of a system of partial differential equations
+admitting a finite and continuous group will be reduced; the second
+shows that, apart from the quadratures, we will only have to integrate
+irreducible systems \emph{independent} of each other.\\
+\\
+Unfortunately Killing's research lacks rigor, and in particular, with
+regard to groups which are not simple, he constantly makes use of
+a theorem which he does not prove in its generality; I point out in
+this work an example where this theorem is not verified, and, when
+the opportunity arises, a certain number of other errors of less importance.
+It was therefore to be hoped that Killing's research would be reproduced
+and his results rigorously demonstrated.\\
+\\
+Thus, in a Thesis written in 1891 under the direction of Engel\footnote{\emph{Ueber die Zusammensetzung der endlichen continuierlichen Transformationsgruppen,
+insbesondere der Gruppen von Range Null}, von Karl Arthur Umlauf,
+Leipzig, 1891.}, Umlauf takes up the study of the characteristic equation, rigorously
+proves a certain number of theorems stated by Killing, and specifically
+studies groups of rank zero; it shows that they belong to the great
+class of integrable groups and determines the structures of those
+of these groups which have less than seven parameters.\\
+\\
+The aim of the present work is to review and supplement in certain
+points the research of Killing, by introducing appropriate rigor.
+I have already announced, in two Notes presented to the Academy of
+Sciences\footnote{\emph{Comptes Rendus}, t. 116, p. 784 sqq. (1893).},
+that I had found the fundamental results stated by Killing, and, in
+a third Note published in the \emph{Leipziger Berichte}\footnote{\emph{Leipz. Ber.}, 1893, p. 395-420.},
+I indicated, in broad strokes, the portions of Killing's research
+relating to simple groups that we could make rigorous.\\
+\\
+This work is divided into three parts. In the first, I recall the
+fundamental notions and the theorems necessary for the sequel, most
+of which have been known for a long time; then I expose the classification
+of groups, following Lie, into integrable and non-integrable, and
+I quickly recall the properties of integrable groups and of the rank
+zero groups which are closely related to them. The consideration of
+a certain quadratic form $\psi_2(e)$ leads me to a new criterion
+for the integrability of a group.\\
+\\
+The second part is devoted to groups which admit no integrable invariant
+subgroup and which I call \emph{semi-simple} using a Killing expression
+(\emph{halbeinfach}). The consideration of the same quadratic form
+$\psi_2(e)$ immediately gives the fundamental property of these groups
+to decompose into simple invariant subgroups, which justifies their
+name. I then study the properties of the characteristic equation of
+such a group and show how Killing deduces all simple groups.\\
+\\
+The third part is devoted to non-integrable groups. I start \emph{a
+priori} from the existence of the largest integrable invariant subgroup,
+instead of obtaining it \emph{a posteriori} and laboriously, like
+Killing. I demonstrate Engel's theorem of which I spoke earlier and
+state important and new results relating to the ranks of successive
+derived groups of a given group. The consideration of the quadratic
+form $\psi_2(e)$ provides me, without solving equations, algebraic
+or transcendent, the largest invariant integrable subgroup of a given
+group. A chapter is devoted to non-integrable groups of rank \emph{one}.
+Finally, in the last chapter I study the groups which admit only an
+integrable invariant subgroup, groups whose theory is linked in a
+very close way to that of linear and semi-simple homogeneous groups;
+in particular I determine all the linear and homogeneous simple groups
+in $n$ variables which are not isomorphic to any linear and homogeneous
+group with less than $n$ variables, it is unnecessary to emphasize
+the significance of this determination relative to the reduction of
+systems of linear differential equations to systems of partial differential
+equations which admit a finite and continuous group. Finally, I say
+a word about a question no less important, which was the subject of
+a memoir by Killing\footnote{\emph{Bestimmung der gr{\"o}ssten Untergruppen von endlichen Transformationsgruppen},
+von W. Killing in Braunsberg, \emph{Math. Ann.}, t. 36, p. 239-254
+(1890).}, but whose development would have taken me to far afield, that of
+the determination of the largest subgroups of simple groups.\\
+\\
+Allow me, in closing, to express to Sophus Lie all my gratitude for
+the interest he has kindly shown in my research. It is needless to
+say that I made, especially in the first part, the broadest borrowings
+from his excellent work on the theory of finite and continuous groups\footnote{\emph{Theorie der Transformationsgruppen}, unter Mitwirkung von Prof.
+Dr. Friedrich Engel, bearbeitet von Sophus Lie, Leipzig. Erster Abschnitt,
+1888; zweiter Abschnitt, 1890; dritter Abschnitt, 1893}.\pagebreak
+
+\part*{\uline{First Part}}
+
+\section*{Chapter I: Finite and Continuous Groups. Infinitesimal Transformations.
+Adjoint Group.}
+
+\textbf{1.} Given a set of transformations of $n$ variables $x_1,x_2,\ldots,x_n$,
+depending on $r$ arbitrary parameters $a_1,a_2,\ldots,a_r$, \begin{equation} \label{eq:1.1}
+	x_i^\prime = f_i(x_1,x_2,\ldots,x_n;a_1,a_2,\ldots,a_r), \;\; (i=1,2,\ldots,n),
+\end{equation}we say that these transformations form a group if, by first performing
+the transformation which corresponds to the parameters $a_1,a_2,\ldots,a_r$,
+then the transformation which corresponds to the parameters $b_1,b_2,\ldots,b_r$
+we still obtain a transformation of the set (\ref{eq:1.1}), whatever
+the $a$ and the $b$, in other words if we have relations of the
+form \begin{equation} \label{eq:1.2}
+	\begin{split}
+		f_i(f_1(x,a),\ldots,f_n(x,a);b_1,b_2,\ldots,b_r)\equiv f_i(x_1,\ldots,x_n;c_1,c_2,\ldots,c_r), \\ 
+		(i=1,2,\ldots,n),
+	\end{split}
+\end{equation}where the $c$ are some functions of $a$ and $b$:\begin{equation} \label{eq:1.3}
+	c_k=\phi_k(a_1,a_2,\ldots,a_r;b_1,b_2,\ldots,b_r), \;\; (k=1,2,\ldots,r).
+\end{equation}The group defined by equation (\ref{eq:1.1}) is said to be \emph{finite
+and continuous}.\\
+\\
+\textbf{2.} If in equation (\ref{eq:1.1}) we can give the parameters
+values such that we have identically \begin{equation*}
+	f_i(x,a)\equiv x_i, \;\; (i=1,2,\ldots,n),
+\end{equation*}we say that the group contains the identity transformation. Lie showed
+that, if the $r$ parameters are \emph{essential}, we can find in
+the group $r$ infinitesimal transformations \begin{equation} \label{eq:1.4}
+	x_i^\prime = x_i+\xi_{ki}(x_1,\ldots,x_n)\delta t+\ldots, \;\; (k=1,2,\ldots,r),
+\end{equation}the unwritten terms being of the second order at least with respect
+to the infinitely small quantity $\delta t$. These $r$ infinitesimal
+transformations are independent, that is to say that there is no relation
+with constant coefficients of the form \begin{equation*}
+	\sum_{k=1}^r c_k \xi_{ki}(x)\equiv 0, \;\; (i=1,2,\ldots,n);
+\end{equation*}moreover the group contains all infinitesimal transformations of the
+form \begin{equation*}
+	x_i^\prime=x_i+\sum_{k=1}^r e_k \xi_{ki}(x)\delta t+\ldots, \;\; (i=1,2,\ldots,n),
+\end{equation*}where the $e_k$ are arbitrary constants.\\
+\\
+If we define the infinitesimal transformation (\ref{eq:1.4}) by the
+limit of the ratio $\frac{\delta f}{\delta t}$, where $f$ denotes
+an arbitrary function of x, we have \begin{equation*}
+	\lim \frac{\delta f}{\delta t} = X_kf=\sum_{i=1}^n \xi_{ki}(x_1,x_2,\ldots,x_n)\frac{\partial f}{\partial x_i}
+\end{equation*}Each of the infinitesimal transformations $\sum e_k X_kf$ generates
+a group with one parameter; if we give $e$ all possible values, we
+thus obtain a group of transformations with $r$ \emph{essential}
+parameters, \emph{contained in the group} (\ref{eq:1.1}).\\
+\\
+\emph{The $r$ infinitesimal transformations $X_1f,\ldots,X_rf$ satisfy
+the relations }\begin{equation} \label{eq:1.5}
+	[X_i,X_k]=X_i(X_kf)-X_k(X_if)=\sum_{s=1}^r c_{iks}X_sf,
+\end{equation}\emph{where $c_{iks}$ denotes constants.}\\
+\\
+\emph{Conversely, given $r$ independent infinitesimal transformations
+$X_1f,\ldots,X_rf$, satisfying relations of the form (\ref{eq:1.5}),
+the one-parameter groups generated by the infinitesimal transformations
+$\sum e_k X_kf$, where the $e$ take all possible values, form a
+group with $r$ essential parameters.}\\
+\\
+From now on we will only deal with groups with $r$ parameters generated
+by $r$ independent infinitesimal transformations.\\
+\\
+\textbf{3.} The constants $c_{iks}$ introduced in equation (\ref{eq:1.5})
+define what is called the \emph{structure} of the group generated
+by the infinitesimal transformations $X_1f,\ldots,X_rf$, or more
+concisely of the group $X_1f,\ldots,X_rf$. This structure plays a
+fundamental role in a large number of questions, particularly in the
+theory of the integration of differential equations which admit a
+given finite and continuous group.\\
+\\
+The theory of \emph{structure} is dominated by the following theorem,
+which is due to Lie together with those above:\\
+\\
+\emph{The necessary and sufficient condition for there to exist $r$
+independent infinitesimal transformations $X_1f,\ldots,X_rf$ satisfying
+the relations (\ref{eq:1.5}):} \begin{equation} \tag{5}
+	[X_i,X_k]=\sum_{s=1}^r c_{iks}X_sf, \;\; (i,k=1,2,\ldots,r),
+\end{equation}\emph{is that the constants $c_{iks}$ satisfy the relations} \begin{equation} \label{eq:1.6}
+	\begin{split}
+		c_{iks}+c_{kis} = 0, \\
+		\sum_{\rho=1}^r(c_{ik\rho}c_{h\rho s}+c_{kh\rho}c_{i\rho s}+c_{hi\rho}c_{k\rho s})=0, \\
+		(i,k,h,s = 1,2,\ldots,r),
+	\end{split}
+\end{equation}\emph{obtained from the Jacobi identity }\begin{equation*}
+[[X_i,X_k],X_h]+[[X_k,X_h],X_i]+[[X_h,X_i],X_k]=0.
+\end{equation*}\\
+We will therefore have all possible structures of groups with $r$
+parameters, or, more concisely, \emph{all structures of order $r$},
+by solving equation (\ref{eq:1.6}) in the most general manner.\\
+\\
+Given the group $X_1f,\ldots,X_rf$, we can just as easily define
+it by $r$ independent infinitesimal transformations $Y_1f,\ldots,Y_rf$:
+\begin{equation} \label{eq:1.7}
+	Y_if=\sum_{\rho=1}^r h_{i\rho} X_\rho f, \;\; (i=1,2,\ldots,r),
+\end{equation}with the $h$ being constants.\\
+\\
+We then have relations analogous to (\ref{eq:1.5}): \begin{equation} \label{eq:1.5p} \tag{$5^\prime$}
+	[Y_i,Y_k]=\sum_{s=1}^r g_{iks}Y_sf, \;\; (i,k=1,2,\ldots,r),
+\end{equation}where the $g_{iks}$ are determined by the relations \begin{equation} \label{eq:1.8}
+	\sum_{\omega=1}^r h_{\omega s}g_{ik\omega}=\sum_{\rho,\sigma=1}^r h_{i\rho}h_{k\sigma}c_{\rho\sigma s},
+\end{equation}and necessarily satisfy equation (\ref{eq:1.6}). It is clear that
+these new constants $g_{iks}$ define a structure which is not to
+be considered as distinct from the $c_{iks}$ structure. We can then
+take advantage of the indeterminancy of the $r^ 2$ constants $h$
+to simplify the solution of equation (\ref{eq:1.6}).\\
+\\
+\textbf{4. }Two groups of order $r$ which have the same structure
+are said to be \emph{isomorphic}, whether the number of their variables
+is the same or not. In a more general manner, given a group of order
+$r:\,X_1f,\ldots,X_rf$, with structure $c_{iks}$, and $r$ infinitesimal
+transformations, \emph{independent or not}, $Y_1f,\ldots,Y_rf$, satisfying
+the relations \begin{equation} \tag{5}
+	[Y_i,Y_k]=\sum_{s=1}^r c_{iks}Y_sf, \;\; (i,k=1,2,\ldots,r),
+\end{equation}these $r$ transformations define a group which is said to be isomorphic
+to the first. The isomorphism is \emph{holoedric} if the second group
+is of order $r$, \emph{meriedric} if it is of order lower than $r$.\\
+\\
+\textbf{5.} Given the most general infinitesimal transformation $\sum e_k X_kf$
+of a group of order $r$, if we carry out on the primitive variables
+and on the transformed variables the same group transformation, for
+example the infinitesimal transformation $X_if$, we obtain another
+infinitesimal group transformation, namely \begin{equation*}
+	\sum e_k X_kf+\left[ \sum e_k X_k,X_i\right] \delta t+\ldots
+\end{equation*}or $\sum e_k^\prime X_kf$, by taking \begin{equation} \label{eq:1.9}
+	e_k^\prime=e_k+\sum_{s=1}^r e_sc_{sik}\delta t+\ldots, \;\; (k=1,2,\ldots,r).
+\end{equation}If, in (\ref{eq:1.9}), we give all the possible values to the index
+$i$, we obtain $r$ infinitesimal transformations of the variables
+$e_1,e_2,\ldots,e_r$, namely \begin{equation} \label{eq:1.10}
+	E_if=\sum_{s,k=1}^r e_s c_{sik} \frac{\partial f}{\partial e_k}, \;\; (i=1,2,\ldots,r).
+\end{equation}These $r$ infinitesimal transformations, which are not necessarily
+independent, generate a group isomorphic to the primitive group, as
+we can verify by considering (\ref{eq:1.6}). This group is called
+the \emph{adjoint group} of the primitive group. It depends only on
+the structure of the latter and indicates how the parameters $e_1,e_2,..,e_r$
+of the infinitesimal transformation $\sum e_k X_kf$ are transformed
+when one carries out a group transformation on this infinitesimal
+transformation.\\
+\\
+If we have a linear and homogeneous relation with constant coefficients
+among the $Ef$, then the relationship\begin{equation*}
+	\sum_{i=1}^r \lambda_i E_if=\sum_{i,s,k=1}^r \lambda_i e_s c_{sik}\frac{\partial f}{\partial k} \equiv 0,
+\end{equation*}implies either\begin{equation*}
+	\sum_{i=1}^r \lambda_i c_{sik}=0, \;\; (s,k=1,2,\ldots,r),
+\end{equation*}or else\begin{equation*}
+	\left(\sum \lambda_i X_i,X_s \right)=0, \;\; (s = 1,2,\ldots,r).
+\end{equation*}\\
+The infinitesimal transformation $\sum \lambda_i X_i f$ \emph{commutes}
+with all the infinitesimal transformations of the group, or else is
+\emph{distinct}. The converse is also true. \emph{The adjoint group
+is therefore of order $r-\rho$, if the group gives admits $\rho$
+distinct independent infinitesimal transformations}.\\
+\\
+\textbf{6.} The adjoint group is \emph{intransitive}, which is to
+say that there exists a relation of the form\begin{equation*}
+	\sum_{k=1}^r \chi_k(e_1,e_2,\ldots,e_r)E_k f=0;
+\end{equation*}in fact, we can immediately verify that\begin{equation} \label{eq:1.11}
+	\sum_{k=1}^r e_k E_k f=0.
+\end{equation}We can still say that the complete system \begin{equation*}
+	E_i f=0, \;\;\; (i=1,2,\ldots,r)
+\end{equation*}admits at least one solution. If $F(e_1,e_2,\ldots,e_r)$ is such
+a solution, the function $F$ does not change when we effect a transformation
+of the adjoint group on $e_1,e_2,\ldots,e_r$; thus it is an \emph{invariant}
+of the adjoint group.\\
+\\
+We can therefore state the following theorem: \\
+\emph{The adjoint group of every group admits at least one invariant}.\\
+\\
+\textbf{7.} The adjoint group (\ref{eq:1.10}) $E_1f,\ldots,E_rf$
+was obtained by starting from the infinitesimal transformations $X_1f,\ldots,X_rf$.
+If we had started from the transformations $Yf$ defined by equation
+(\ref{eq:1.7}), any infinitesimal transformation would have been
+defined by the parameters $\eta_1,\eta_2,\ldots,\eta_r$ of the expression
+$\sum \eta_k Y_k f$, and we would have obtained in these new variables
+a second adjoint group:\begin{equation} \label{eq:12}
+	H_if=\sum_{s,k=1}^r \eta_s g_{sik} \frac{\partial f}{\partial \eta_k}, \;\;\; (i=1,2,\ldots,r),
+\end{equation}where the $g_{sik}$ are defined by (\ref{eq:1.5p}). We have between
+the two systems of parameters $e$ and $\eta$ of the same infinitesimal
+transformation the relation\begin{equation*}
+	\sum_{k=1}^r e_k X_kf=\sum_{k=1}^r \eta_k Y_kf,
+\end{equation*}which decomposes into\begin{equation} \label{eq:1.13}
+	e_k=\sum_{\rho=1}^r h_{\rho k}\eta_\rho, \;\;\; (k=1,2,\ldots,r).
+\end{equation}\\
+It is obvious that one passes from the group $Ef$ to the group $Hf$
+by carrying out the substitution (\ref{eq:1.13}) on $e$. It is easy
+to verify this directly, because we have\begin{equation*}
+	H_if=\sum_{k=1}^r H_i e_k \cdot \frac{\partial f}{\partial e_k}=\sum_{s,\rho,k=1}^r \eta_s g_{si\rho}h_{\rho k} \frac{\partial f}{\partial e_k}
+\end{equation*}hence, considering (\ref{eq:1.8}) and then (\ref{eq:1.13}),\begin{equation*}
+	H_if=\sum_{s,\mu,\nu,k=1}^r \eta_s h_{s\mu}h_{i\nu}c_{\mu\nu k} \frac{\partial f}{\partial e_k} = \sum_{\mu,\nu,k=1}^r e_\mu h_{i\nu}c_{\mu\nu k} 	\frac{\partial f}{\partial e_k}= \sum_{\nu=1}^r h_{i\nu}E_\nu f,
+\end{equation*}which is by virtue of equation (\ref{eq:1.13}). The relations thus
+obtained:\begin{equation} \label{eq:1.14}
+	H_if=\sum_{\nu=1}^r h_{i \nu} E_\nu f, \;\;\; (i=1,2,\ldots,r)
+\end{equation}are the same as those which define $Yf$ as a function of $Xf$.\\
+\\
+\textbf{8.} Given a group $G$ of order $r$ generated by the $r$
+independent infinitesimal transformations $X_1f,\ldots,X_rf$, a \emph{subgroup}
+of $G$ is a group deduced from $G$ by restricting the parameters
+of $G$ by certain relations. Such a subgroup $g$ of order $m$ is
+generated by $m$ independent infinitesimal transformations of the
+form\begin{equation} \label{eq:1.15}
+	\mathscr{X}_i f=\alpha_{i1}X_1f+\alpha_{i2}X_2f+\ldots+\alpha_{ir}X_rf, \;\;\; (i=1,2,\ldots,m),
+\end{equation}the $\alpha_{ik}$ being $mr$ suitably chosen constants. We see then
+that the search for subgroups of order $m$ of $G$ amounts to determining
+the most general constants $\alpha_{ik}$ in such a way that the brackets
+$[\mathscr{X}_i,\mathscr{X}_k]$ are deduced linearly from $\mathscr{X}_1f,\ldots,\mathscr{X}_mf$:\begin{equation*}
+	[\mathscr{X}_i,\mathscr{X}_k]=\sum_{s=1}^m \gamma_{iks}\mathscr{X}_sf, \;\;\; (i,k=1,2,\ldots,m).
+\end{equation*}\\
+We see that the solution to the problem depends only on the \emph{structure}
+of the group.\\
+\\
+We can also define the group $g$ by the relations which satisfy the
+parameters $e_1,e_2,\ldots,e_r$ of its most general infinitesimal
+transformation. These relations are linear and homogeneous and are
+obtained, for example, by eliminating $\lambda_1,\lambda_2,\ldots,\lambda_m$
+between the $r$ equations\begin{equation} \label{eq:1.16}
+	e_k=\sum_{i=1}^m \lambda_i \chi_{ik}, \;\;\; (k=1,2,\ldots,r).
+\end{equation}\\
+If we regard, with Lie, $e_1,e_2,\ldots,e_r$ as the homogeneous coordinates
+of a point in a space with $r-1$ dimensions, the subgroup $g$ of
+order $m$ is represented in this space by a plane multiplicity with
+$m-1$ dimensions , $M$, which is called the \emph{image} of the
+subgroup, any point of this multiplicity being given by equation (\ref{eq:1.16}).
+Imagine that we carry out on this multiplicity a transformation of
+the adjoint group. We obtain a new plane multiplicity $M^\prime$.
+It is obviously the image of a subgroup $g^\prime$, obtained by carrying
+out on the $x$ and the $x^\prime$ in the equations\begin{equation*}
+	x_i^\prime = \phi_i(x_1,x_2,\ldots,x_n;\alpha_1,\alpha_2,\ldots,\alpha_m), \;\;\; (i=1,2,\ldots,n)
+\end{equation*}of the subgroup $g$ the corresponding transformation of $G$. The
+two subgroups $g$ and $g^\prime$ are said to be \emph{homologous}
+in the total group $G$. We also say that they belong to the same
+\emph{type} of subgroups.\\
+\\
+If, in particular, whatever the transformation of the adjoint group
+that is carried out on $M$, $M^\prime$ coincides with $M$, the
+subgroup $g$ is said to be \emph{an invariant subgroup}. From \S 4,
+we see that if $\mathscr{X}f$ denotes any infinitesimal transformation
+of an invariant subgroup $g$ and $X_if$ any transformation of $G$,
+$[\mathscr{X},X_i]$ is part of $g$, which is to say\begin{equation} \label{eq:1.17}
+	[\mathscr{X}_i,X_k]=\sum_{s=1}^m b_{iks} \mathscr{X}_sf, \;\;\; (i=1,2,\ldots,m;k=1,2,\ldots,r).
+\end{equation}\\
+The converse is obvious.\\
+\textbf{}\\
+\textbf{9.} An important invariant subgroup is formed by the infinitesimal
+transformations $[X_i,X_k]$. We have in fact, by virtue of the Jacobi
+identity, \begin{equation*}
+[X_i,[X_\mu,X_\nu]] = \sum_{\rho=1}^r c_{i\mu \rho}[X_\rho,X_\nu]-\sum_{\rho=1}^r c_{i \nu \rho}[X_\rho,X_\mu], \;\; (i,\mu,\nu=1,2,\ldots,r).
+\end{equation*}So if the $[X_i,X_k]$ form less than $r$ independent infinitesimal
+transformations, they define an invariant subgroup $G_1$ of $G$.
+This is called the \emph{derived group} of $G$.\footnote{Lie, \emph{Leipzinger Berichte}, 1888, p. 19. M. Killing (\emph{Math.
+Ann.}, t. 31, p. 253-254), uses the expression ``Hauptuntergruppe,''
+or fundamental subgroup.} If the $[X_i,X_k]$ form $r$ independent infinitesimal transformations,
+\emph{$G$ is its own derived group}.\\
+\\
+The group $G_2$ derived from $G_1$ is the second derived group of
+$G$, and so on. We also say that $G_1$ is the first derived group
+of $G$.\\
+\\
+\emph{If $g$ is an invariant subgroup of $G$, the derived group
+$g_1$ of $g$ is also an invariant subgroup of $G$},\footnote{Cf. Killing, \emph{Zusammensetsung von Gruppen},\emph{ Math. Ann.},
+t. 36, p. 167.} because of\begin{equation*}
+	[X_i,\mathscr{X}_k]=\sum_{s=1}^m b_{iks} \mathscr{X}_sf, \;\;\; (i=1,2,\ldots,r;k=1,2,\ldots,m),
+\end{equation*}we deduce\begin{equation*}
+	[X_i[\mathscr{X}_\mu,\mathscr{X}_\nu]]=
+	\sum_{\rho=1}^m b_{i\mu\rho} [\mathscr{X}_\rho,\mathscr{X}_\nu]-
+	\sum_{\rho=1}^m b_{i\nu\rho} [\mathscr{X}_\rho,\mathscr{X}_\mu].
+\end{equation*}\emph{The difference $r-r_1$ of the orders of group $G$ and of its
+derived group $G_1$ is equal to the number of independent linear
+invariants of the adjoint group of $G$};\footnote{Cf. Killing, \emph{Math. Ann.}, t. 31, p. 268.}
+because if $e_1$ is an invariant of the adjoint group, we have\begin{equation*}
+	E_\mu e_1 = \sum e_s c_{s\mu 1}=0,
+\end{equation*}from which\begin{equation*}
+c_{s\mu 1}=0, \;\;\; (s,\mu=1,2,\ldots,r);
+\end{equation*}and reciprocally, if $X_{m+1}f,\ldots,X_rf$ define $G_1$, we have\begin{equation*}
+	c_{s\mu i}=0, \;\;\; (s,\mu=1,2,\ldots,r;i=1,2,\ldots,m)
+\end{equation*}and $e_1,e_2,\ldots,e_m$ are invariants of the adjoint group.\\
+\\
+\textbf{10.} Given a group $G$ of order $r$ defined by the $r$
+independent infinitesimal transformations $X_1f, X_2f,\ldots,X_rf$,
+we call, as earlier, $E_if$ the infinitesimal transformations of
+the adjoint group:\begin{equation*}
+	E_if=\sum_{s,k=1}^r e_s c_{sik} \frac{\partial f}{\partial e_k}, \;\;\; (i=1,2,\ldots,r),
+\end{equation*}and set\begin{equation} \label{eq:1.18}
+	G_if=\frac{\partial f}{\partial e_i}, \;\;\; (i=1,2,\ldots,r).
+\end{equation}We then have\begin{equation} \label{eq:1.19}
+	[E_i,G_k]=\sum_{s=1}^r c_{iks}G_sf.
+\end{equation}That being the case, consider the family of infinitesimal transformations
+$\varepsilon_1 \mathscr{X}_1f+\varepsilon_2 \mathscr{X}_2f+\ldots+\varepsilon_m \mathscr{X}_mf$,
+where\begin{equation*}
+	\mathscr{X}_if=\alpha_{i1}X_1f+\ldots+\alpha_{ir}X_rf, \;\;\; (i=1,2,\ldots,m).
+\end{equation*}Suppose that the infinitesimal transformation $\lambda_1 X_1f+\ldots+\lambda_r X_rf$
+leaves this family invariant, that is to say we have\begin{equation} \label{eq:1.20}
+	\left[\sum \lambda_i X_i, \mathscr{X}_k \right]=\sum_{s=1}^m a_{ks}\mathscr{X}_sf, \;\;\; (k=1,2,\ldots,m);
+\end{equation}we then have, on setting\begin{equation*}
+	\mathscr{G}_if=\alpha_{i1}G_if+\ldots+\alpha_{ir}G_rf, \;\;\; (i=1,2,\ldots,m),
+\end{equation*}the relations\begin{equation} \tag{$20^\prime$} \label{eq:1.20p}
+	\left[\lambda_i E_i, \mathscr{G}_k \right]=\sum_{s=1}^m a_{ks}\mathscr{G}_sf, \;\;\; (k=1,2,\ldots,m).
+\end{equation}On the other hand, let $F(e_1,e_2,\ldots,e_r)$ be an invariant of
+the adjoint group and set\begin{equation*}
+	\mathcal{E}f=\sum_{i=1}^r \lambda_i E_if;
+\end{equation*}we then have\begin{align}
+	\begin{split} \label{eq:1.21}
+		\mathcal{E}(\mathscr{G}_k F)&=\sum_{s=1}^m a_{ks}\mathscr{G}_s F,\\
+		\mathcal{E}(\mathscr{G}_h \mathscr{G}_k F)&=\sum_{s=1}^r a_{ks}\mathscr{G}_h\mathscr{G}_sF-\sum_{s=1}^r a_{hs}\mathscr{G}_k\mathscr{G}_sF, \\
+		.................&...................................................... \\
+		&(h,k=1,2,\ldots,m).
+	\end{split}
+\end{align}It follows that the infinitesimal transformation $\mathscr{X}f=\sum \lambda_i X_if$
+leaves invariant each of the families of infinitesimal transformations
+defined by one of the following systems of equations in $e_1,e_2,\ldots,e_r$:\begin{align}
+	\mathscr{G}_iF=0&, \;\;\;  (i=1,2,\ldots,m), \label{eq:1.22} \\
+	\mathscr{G}_i\mathscr{G}_jF=0&, \;\;\;  (i,j=1,2,\ldots,m), \label{eq:1.23} \\
+	\mathscr{G}_i\mathscr{G}_j\mathscr{G}_kF=0&, \;\;\;  (i,j,k=1,2,\ldots,m). \label{eq:1.24} \\
+    .....................&..................................... \notag
+\end{align}It is the same for each infinitesimal transformation that leaves the
+family $\varepsilon_1 \mathscr{X}_1f+\ldots+\varepsilon_m \mathscr{X}_mf$
+invariant.\\
+\\
+In particular, if $\mathscr{X}_1f,\ldots,\mathscr{X}_mf$ form a subgroup
+of $G$, the same will be true for each of the transformations of
+this subgroup.\\
+\\
+If $\mathscr{X}_1f,\ldots,\mathscr{X}_mf$ form an invariant subgroup
+of $G$, the group $G$ will leave invariant each of the families
+of transformations defined by the systems (\ref{eq:1.22}), (\ref{eq:1.23}), (\ref{eq:1.24}),....
+If then $F(e_1,e_2,...,e_r)$ is a homogeneous polynomial of degree
+$m$, the $(m-1)^\text{th}$ of these systems will define a new invariant
+subgroup of $G$.\\
+\\
+\textbf{Theorem.} -- \emph{If the $m$ independent infinitesimal
+transformations $\sum_{k=1}^r \alpha_{ik}X_kf$, $(i=1,2,\ldots,m)$
+form an invariant subgroup of the group $G$ of order $r: X_1f,...,X_rf$;
+and if $F$ denotes an invariant of the adjoint group of $G$ which
+is a homogeneous polynomial and of degree $m$ in $e_1,e_2,\ldots,e_r$,
+the system of linear equations\begin{equation*}
+	\mathscr{G}_{i_1}\mathscr{G}_{i_2}\ldots\mathscr{G}_{i_{m-1}}F=0, \;\;\; (i_1,\ldots,i_{m-1}=1,2,\ldots,m),
+\end{equation*}where\begin{equation*}
+	\mathscr{G}_if=\sum_{k=1}^r \alpha_{ik} \frac{\partial f}{\partial e_k},
+\end{equation*}defines an invariant subgroup of G}.\\
+\\
+If the first invariant subgroup reduces to the group itself, the system
+of equations considered is obtained by setting to 0 all partial derivatives
+of $F$ of order $m-1$ with respect to $e_1,e_2,\ldots,e_r$.\pagebreak
+
+\section*{Chapter II: Characteristic Determinant. Characteristic Equation.
+Rank.}
+
+\textbf{1.} The characteristic equation of a group was introduced
+by Lie. Killing took it as the basis for his research on group structure
+and showed its great importance\footnote{\emph{Die Zusammensetzung der stetigen, endlichen Transformationsgruppen},
+von W. Killing. 1\textsuperscript{st} part, \emph{Math Ann.}, t.
+31, p. 252 sqq.; 2\textsuperscript{nd} part, t. 33, p.1 sqq.; 3\textsuperscript{rd}
+part, t. 34, p. 57 sqq.; 4\textsuperscript{th} part, t. 36, p. 161
+sqq. I will designate in the following these different papers by the
+notation: Killing, Z. v. G., I (or II, or III, or IV).}.\\
+\\
+Given a group $G$ generated by the $r$ infinitesimal tranformations
+$X_1f,X_2f,\ldots,X_rf$, we propose to find all \emph{two}-parameter
+subgroups to which an arbitrary infinitesimal transformation of the
+group belongs. To accomplish this we will have to find the $r$ constants
+$\lambda_1,\lambda_2,\ldots,\lambda_r$ such that\begin{equation} \label{eq:2.1}
+	\left[ \sum e_i X_i, \, \sum \lambda_k X_k \right] = \rho \sum e_i X_i f + \omega \sum \lambda_k X_k f,
+\end{equation}where $\rho$ and $\omega$ are two new constants; naturally the $\lambda$
+cannot be proportional to the $e$. Lie has shown that this is always
+possible\footnote{Lie, \emph{Transformationsgruppen}, I, p. 590 and also \emph{Archiv
+for Math. og Nat}. t. 1, 1876.}. We can always assume that the infinitesimal transformation under
+consideration is $X_1f$ and that $\lambda_1 = 0$. This leads to\begin{equation*} 
+	\left[ X_1, \sum_{k=2}^r \lambda_k X_k \right] = \sum_{k,s} \lambda_k c_{1ks} X_s f 
+	= \rho X_1f + \omega \sum_{k=2}^r \lambda_k X_k f;
+\end{equation*}where $\omega$ is determined by the equation\begin{equation*}
+	\begin{vmatrix}
+		c_{122}-\omega & c_{132} & \ldots & c_{1r2} \\
+		c_{123} & c_{133}-\omega & \ldots & c_{1r3} \\
+		\ldots & \ldots & \ldots & \ldots \\
+		c_{12r} & c_{13r} & \ldots & c_{irr}-\omega
+	\end{vmatrix} = 0,
+\end{equation*}and $\lambda_2, \lambda_3,\ldots, \lambda_r$ are obtained by the
+equations\begin{equation*}
+	\sum_{k=2}^r c_{1ks} \lambda_k = \omega \lambda_s, \;\; (s=2,3,\ldots,r),
+\end{equation*}and finally $\rho$ by the equation\begin{equation*}
+	\rho = \sum_{k=2}^r \lambda_k c_{1k1}.
+\end{equation*}\\
+In the specific case where we want $\rho$ in equation (\ref{eq:2.1})
+to be zero, i.e. we want an infinitesimal transformation $\sum \lambda_k X_k f$
+that is invariant by a given transformation $\sum e_i X_i f$, $\omega$
+is determined by the equation\begin{equation} \label{eq:2.2}
+	\begin{vmatrix}
+		\Sigma e_i c_{i11}-\omega & \Sigma e_i c_{i21} & \ldots & \Sigma e_i c_{ir1} \\
+		\Sigma e_i c_{i12} & \Sigma e_i c_{i22}-\omega & \ldots & \Sigma e_i c_{ir2} \\
+		\ldots & \ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i1r} & \Sigma e_i c_{i2r} & \ldots & \Sigma e_i c_{irr}-\omega
+	\end{vmatrix} = \Delta(\omega) = 0,
+\end{equation}\\
+The determinant $\Delta (\omega)$ is called the \emph{characteristic
+determinant} of the group, and the equation\begin{equation*}
+	\Delta (\omega) = 0
+\end{equation*}is the \emph{characteristic equation} of the group.\\
+\\
+In the preceeding expressions we assume that $e_1, e_2, \ldots, e_r$
+are arbitrary parameters. If we assign to $e_1, e_2, \ldots , e_r$
+the particular values $e_1^0, e_2^0,\ldots,e_r^0$, the determinant
+becomes the \emph{characteristic determinant with respect to the transformation}
+$\sum e_i^0 X_i f$; in the same manner, if we express the parameters
+of the infinitesimal transformations of a certain subgroup $g$ of
+order $m$, as a function of arbitrary $\lambda_1, \lambda_2,\ldots, \lambda_m$,
+we obtain the \emph{characteristic determinant} (or the \emph{characteristic
+equation}) \emph{with respect to the subgroup} $g$, which should
+not be confused with the characteristic determinant of subgroup $g$,
+which is of the same order.\\
+\\
+Note that for $\omega = 0$, the elements of the $\mu^{th}$ column
+of the characteristic determinant are the coefficients of $\frac{\partial f}{\partial e_1},\ldots,\frac{\partial f}{\partial e_r}$
+in the infinitesimal transformation $E_\mu f$ of the adjoint group:\begin{equation*}
+	E_\mu f = \sum_{s,i = 1}^r e_s c_{s \mu i} \frac{\partial f}{\partial e_i}.
+\end{equation*}\\
+It follows, since\begin{equation*}
+	\sum_{\mu=1}^r e_\mu E_\mu f = 0,
+\end{equation*}that the characteristic determinant is zero when $\omega=0$.\\
+\\
+We will now consider\begin{equation} \label{eq:2.3}
+	(-1)^r \Delta(\omega) = \omega^r-\psi_1(e)\omega^{r-1}+\psi_2(e)\omega^{r-2}+
+	\ldots+(-1)^{r-1}\psi_{r-1}(e)\omega.
+\end{equation}\\
+The coefficient $\psi_i(e)$ is a homogeneous polynomial in $e_1,e_2,\ldots,e_r$
+of degree $i$. We also have \begin{align}
+	\begin{split} \label{eq:2.4}
+		\psi_1(e) &= \sum_{i,k=1}^r e_i c_{ikk}, \\
+		\psi_1^2(e)-2 \psi_2(e) &= \sum_{i,j,k,h=1}^r e_i e_j c_{ikh} c_{jhk}, \\
+		&\ldots
+	\end{split}
+\end{align}\\
+\\
+\textbf{2.} Suppose that we define the group by the $r$ independent
+infinitesimal transformations $X_1^\prime f, \ldots, X_r^\prime f$:\begin{equation} \label{eq:2.5}
+	X_i^\prime f = \sum_{s=1}^r h_{is}X_sf, \;\; (i=1,2,\ldots,r),
+\end{equation}which amounts to performing on $e$ the substitution\begin{equation} \label{eq:2.6}
+	e_k = \sum_{i=1}^r h_{ik}e_i^\prime, \;\; (k=1,2,\ldots,r).
+\end{equation}So if we consider\begin{equation*}
+	\left[ X_i^\prime, X_k^\prime \right] = \sum_{s=1}^r c_{iks}^\prime X_s^\prime f,
+\end{equation*} we have, with reference to equation 1.8, \begin{equation} \label{eq:2.7}
+	\sum_{\omega=1}^r h_{\omega s} c_{ik\omega} 
+	= \sum_{\rho, \sigma =1}^r h_{i\rho} h_{k\sigma}c_{\rho \sigma s}, \;\; (i,k,s = 1,2,\ldots,r).
+\end{equation}\\
+Let $\Delta^\prime (\omega)$ be the new determinant. If $\gamma_{ij}^\prime$
+designates the element of $\Delta^\prime$ at the $i^{th}$ row and
+the $j^{th}$ column, we have \begin{equation} \tag{$8^\prime$} \label{eq:2.8p}
+	\gamma_{ij}^\prime = \sum_{s=1}^r e_s^\prime c_{sij}^\prime - \epsilon_{ij} \omega, \;\; \epsilon_{ij} =
+		\begin{cases}
+			1 & \text{if } i=j,\\
+			0 & \text{if } i \ne j.
+		\end{cases}
+\end{equation}and in the same way for $\Delta$:\begin{equation} \label{eq:2.8}
+	\gamma_{ij} = \sum_{s=1}^r e_s c_{sij} - \epsilon_{ij} \omega.
+\end{equation}\\
+I claim that we have, by virtue of the substitution (\ref{eq:2.6}),
+\begin{equation} \label{eq:2.9}
+	\sum_{\rho=1}^r h_{i \rho} \gamma_{\rho j} = \sum_{\rho=1}^r h_{\rho j} \gamma_{i \rho}^\prime, \;\; (i, j 
+	= 1,2,\ldots, r).
+\end{equation}\\
+Indeed, by virtue of (\ref{eq:2.8}) and (\ref{eq:2.8p}), this amounts
+to showing that \begin{equation*}
+	\sum_{\rho,s} h_{i\rho}(e_s c_{s\rho j} - \epsilon_{\rho j} \omega) 
+	= \sum_{\rho,s} h_{\rho j}(e_s^\prime c_{si\rho}^\prime - \epsilon_{i\rho} \omega).
+\end{equation*}\\
+The two terms in $\omega$ disappear immediately and, by using (\ref{eq:2.6}),
+the formula to be established becomes \begin{equation*}
+	\sum_{\rho, \omega, s} h_{i \rho} h_{s \omega} e_s^\prime c_{\omega \rho j} 
+	= \sum_{\rho, s} h_{\rho j} e_s^\prime c_{si \rho}^\prime,
+\end{equation*} which immediately comes back to equation (\ref{eq:2.7}).\\
+\\
+Consider now the determinant $D$ with general element \begin{equation*}
+	\Gamma_{ij} = \sum_{\rho=1}^r h_{i \rho} \gamma_{\rho j} = \sum_{\rho=1}^r h_{\rho j} \gamma_{i \rho}^\prime.
+\end{equation*}\\
+We immediately see that $D$ is equal to both the product of $\Delta$
+and the determinant $H$ of $h_{ik}$ , and the product $\Delta^\prime H$.
+As $H$ is not equal to zero, it follows that \begin{equation*}
+	\Delta(\omega)=\Delta^\prime(\omega)
+\end{equation*}\\
+Moreover, the degree of the principal minor of $D$ is equal to both
+that of $\Delta$ and that of $\Delta^\prime$. We thus arrive at
+the following theorem, demonstrated by Umlauf\footnote{See Umlauf, \emph{Ueber die Zusammensetzung der endlichen continuierlichen
+Transformationsgruppen, insbesondere der Gruppen vom Range Null}.
+Leipzig, 1891, p. 15 sqq.}:\\
+\\
+\textbf{Theorem I. -} \emph{Given a group of order} $r$ \emph{defined
+simultaneously by the} $r$ \emph{independent infinitesimal transformations}
+$X_1f,\ldots, X_rf$\emph{, and the} $r$ \emph{transformations} \begin{equation*}
+	X_i^\prime f = \sum h_{is} X_s f,
+\end{equation*} \emph{we pass from the first characteristic determinant of the group
+to the second, effectively by performing the substitution (\ref{eq:2.6})
+on the $e_i$, and moreover the degree of the principal minor of the
+characteristic determinant does not change. In particular we have}
+\begin{equation*}
+	\psi_i^\prime(e_1^\prime, e_2^\prime,\ldots,e_r^\prime) 
+	= \psi_i \left(\sum h_{k1}e_k^\prime,\ldots,\sum h_{kr}e_k^\prime \right).
+\end{equation*}\\
+From this theorem we can always, for example, assume that $\psi_1(e)$
+reduces to $e_1$ or to 0.\\
+\\
+\textbf{3.} The very origin of the characteristic determinant shows
+that the roots of the characteristic equation are invariants of the
+adjoint group. This is certain at least when all the roots are simple.
+This can be directly proven\footnote{Cf. Killing, Z. v. G., I, p. 259 sqq.}.
+We outline the proof due to Engel, which is much simpler than Killing's,
+which proceeds step by step for each coefficient $\psi_1(e), \psi_2(e),\ldots$.\\
+\\
+We have \begin{equation*}
+	E_\mu \Delta = \sum_{i,j} E_\mu \gamma_{ij} \cdot \frac{\partial \Delta}{\partial \gamma_{ij}} 
+	= \sum_{\omega, s, i, j} e_\omega c_{\omega \mu s} c_{sij} \frac{\partial \Delta}{\partial \gamma_{ij}},
+\end{equation*} or, taking into account equation (\ref{eq:1.6}) (chap. I), \begin{align*}
+	E_\mu \Delta &= \sum_{\omega,s,i,j}e_\omega(c_{\mu is}c_{\omega sj}+c_{\omega is}c_{s\mu j})
+		\frac{\partial \Delta}{\partial \gamma_{ij}} \\
+	&=\sum_{s,i,j}c_{\mu is}(\gamma_{sj}+\epsilon_{sj}\omega)\frac{\partial \Delta}{\partial \gamma_{ij}}
+		-\sum_{s,i,j}c_{\mu sj}(\gamma_{is}+\epsilon_{is}\omega) \frac{\partial \Delta}{\partial \gamma_{ij}} \\
+	&=\left(\sum_i c_{\mu ii} - \sum_j c_{\mu jj}\right)\Delta = 0.
+\end{align*}\\
+We therefore have the following very important theorem:\\
+\\
+\textbf{Theorem II. -}\emph{ The coefficients} $\psi_1(e),\ldots,\psi_{r-1}(e)$
+\emph{of the characteristic equation are invariants of the adjoint
+group.}\footnote{If we refer to the previous chapter (\S9), we see that the equation
+\begin{equation*}
+	\psi_1(e)=\sum_{i,k}e_i c_{ikk}=0
+\end{equation*}defines an invariant subgroup of order $r-1$ of the group. This theorem
+was demonstrated by Lie (\emph{Archiv for Math. og Nat.}, X, p. 88),
+and then by Engel (\emph{Leipz. Ber.}, 1886, p. 89) and Killing (Z.
+v. G., I, p. 263).}\\
+\\
+Since, according to this theorem, the roots of the characteristic
+equation are invariants of the adjoint group, if $\Delta(\omega)$
+contains a polynomial factor \begin{equation*}
+	\delta(\omega) = \omega^m-\chi_1(e)\omega^{m-1}+\ldots\pm \chi_m(e),
+\end{equation*}the $\chi$ being polynomials in $e_1,e_2,\ldots,e_r$, it is clear
+that these polynomials $\chi$ will also be invariants of the adjoint
+group.\\
+\\
+\textbf{Corollary. -}\emph{ If the characteristic determinant contains
+a homogeneous, integer polynomial of degree} $m$ \emph{in} $\omega, e_1,\ldots,e_r$\emph{,
+with the coefficient of} $\omega^m$ \emph{equal to unity, the coefficients
+of the other powers of} $\omega$ \emph{are invariants of the adjoint
+group}.\\
+\\
+\textbf{4.} Assume that we know an invariant subgroup $g$ of a given
+group. We can always assume, from \S2, that this subgroup is generated
+by \begin{equation*}
+	X_{m+1}f,\ldots,X_rf.
+\end{equation*}Thus we have \begin{equation*}
+	c_{i,m+j,k}=0, \;\;
+	\begin{pmatrix}
+		i=1,2,\ldots,r \\
+		j=1,2,\ldots,r-m \\
+		k=1,2,\ldots,m
+	\end{pmatrix}.
+\end{equation*}\\
+It follows that in the characteristic determinant we have \begin{equation*}
+	\gamma_{m+i,j}=0, \;\; (i=1,2,\ldots,r-m; j=1,2,\ldots,m).
+\end{equation*}\\
+Therefore the characteristic determinant decomposes into two parts:
+\begin{equation} \label{eq:2.10}
+	\Delta=\vert \gamma_{ij} \vert \cdot \vert \gamma_{m+h,m+k} \vert, \;\; 
+	(i,j=1,2,\ldots,m; \; h,k=1,2,\ldots,r-m).
+\end{equation}\\
+We see that the first factor depends only on $e_1,e_2,\ldots,e_m$
+and not on $e_{m+1},\ldots,e_r$. Regarding the second factor, if
+we make $e_1=e_2=\ldots=e_m=0$, it is simply the characteristic determinant
+of the invariant subgroup. It follows from this that the characteristic
+determinant relating to the invariant subgroup is, in a neighborhood
+of $\omega^m$, the characteristic determinant of this invariant subgroup.\\
+\\
+On the other hand, recall the theorem of groups, due to Lie\footnote{Lie, \emph{Transformationsgruppen}, I, ch. 17.}:\\
+\\
+\emph{If a group $G$ admits an invariant subgroup $g$, there exists
+a group $G^\prime$ meriedric isomorphic to $G$, with identity transformation
+corresponding to the invariant subgroup $g$ in $G$, and reciprocally,
+if $G^\prime$ is meriedric isomorphic to $G$, an invariant subgroup
+of $g$ corresponds to its identity transformation.}\\
+\\
+The correspondence referred to in this statement is the one which
+gives the constants $c_{iks}$ the same values for both groups.\\
+\\
+Here, in particular, there exist $r$ infinitesimal transformations
+$Y_1f,\ldots,Y_mf,Y_{m+1}f,\ldots,Y_rf$, the last $r-m$ being identically
+zero, and satisfying the relations \begin{equation*}
+	\left[Y_i,Y_k \right] = \sum_{s=1}^r c_{iks}Y_sf.
+\end{equation*}These $r$ transformations determine a group $G^\prime$ of order
+$m$: $Y_1f,\ldots,Y_mf$, which we say \emph{associates} with the
+invariant subgroup $g$. We see that the determinant $\vert \gamma_{ij} \vert$
+is simply the characteristic determinant of the group $G^\prime$.\\
+\\
+\textbf{Theorem III}\textbf{\emph{}}\footnote{See Umlauf, loc. cit., p. 34.}\textbf{.
+-}\emph{ Let $g$ be an invariant subgroup of order $r-m$ of a group
+$G$ of order $r$, let $G^\prime$ be the isomorphic group of order
+$m$ associated with $g$, the characteristic determinant of $G$
+contains as a factor the characteristic determinant of $G^\prime$;
+moreover, the characteristic determinant of $g$ is, in a neighborhood
+of $\omega^m$, the determinant }relative\emph{ to this invariant
+subgroup.}\\
+\\
+We have an analogous theorem for any subgroup.\\
+\\
+\textbf{Theorem IV. -}\emph{ The characteristic determinant relative
+to any subgroup $g$ contains as a factor the characteristic determinant
+of this subgroup}\footnote{Cf. Umlauf, loc. cit. p. 32.}\emph{.}\\
+\\
+This follows because if $X_1f,\ldots,X_mf$ are the infinitesimal
+transformations of this subgroup, which we can always assume to be
+the case, we have, for all transformations $e_1 X_1 f+\ldots+e_m X_m f$,
+\begin{equation*}
+	\gamma_{i,m+j}=0, \;\; (i=1,2,\ldots,m; \; j=1,2,\ldots,r-m).
+\end{equation*}\\
+\\
+\textbf{5.} Killing founded a classification of finite and continuous
+groups on the properties of the coefficients $\psi_i(e)$\footnote{Killing, Z. v. G., I, p. 266 sqq.}.\\
+\\
+\textbf{Definition. -}\emph{ The number of coefficients of the characteristic
+equation that are independent is called the }rank\emph{ of a group.}\\
+\\
+This definition is legitimate, by virtue of Theorem I, because it
+does not depend on the independent infinitesimal transformations chosen
+to define the group.\\
+\\
+As the polynomials $\psi(e)$ are invariants of the adjoint group
+(th.II), the rank of the group is at most equal to the number of distinct
+solutions of the complete system \begin{equation*}
+	E_\mu f = \sum_{i=1}^r \gamma_{\mu i}^0 \frac{\partial f}{\partial e_i}, \;\; (\mu = 1,2,\ldots,r),
+\end{equation*}where $\gamma_{\mu i}^0$ is the element $\gamma_{\mu i}$ of the
+characteristic determinant after setting $\omega=0$; after which
+the rank is at most equal to the order of the principal minor of $\Delta(0)$.
+If $m$ is this order, it is quite clear that we have \begin{equation*}
+	\psi_{r-1}(e)=\psi_{r-2}(e)=\ldots=\psi_{r-m+1}(e)=0,
+\end{equation*}because $\psi_i(e)$ is a sum of minors with i rows and i columns
+of $\Delta(0)$. We can therefore state the following theorem:\\
+\\
+\textbf{Theorem V}\footnote{Cf. Killing, loc. cit., p. 267}\textbf{.-}\emph{
+The rank of a group is at most equal to the number of identically
+zero roots of its characteristic equation.}\\
+\\
+In particular if $\psi_{r-1}(e)$ is not identically zero, the rank
+is equal to one. The converse is not true. We will see later than
+in the case $\psi_{r-1}(e)\ne 0$, we can always reduce this polynomial
+to one of the forms $e_1^{r-1}$ or $(e_1^2-e_2 e_3)^{\frac{r-1}{2}}$.\\
+\\
+If all the polynomials $\psi$ are null, the group is of rank zero.\\
+\\
+With reference to Theorem III, we see that the rank of a group $G^\prime$
+meriedric isomorphic to group $G$ is at most equal to the rank of
+group $G$; because essentially rank is nothing more than the number
+of independent roots of the characteristic equation.\\
+\\
+\textbf{6.} Killing studied in particular groups for which $\psi_{r-1}(e)$
+is not identically zero\footnote{Killing, Z. v. G., I, p. 276-285. An error slipped into this first
+part, which is rectified in the third part, p. 80 sqq.}. I will immediately address the general case in which the characteristic
+equation admits a multiple zero root.\\
+\\
+In general, if the characteristic equation relative to a transformation
+$X_1f$ admits a root $\omega_0$ different from zero, there always
+exists a transformation $X_2f$ distinct from the first and such that
+\begin{equation*}
+	[X_1,X_2]=\omega_0 X_2f.
+\end{equation*}If $\omega_0=0$, is this always the case?\\
+\\
+First, if the group is rank zero, $X_1f$ is part of at least one
+subgroup with two parameters $X_1f, X_2f$, and we have \begin{equation*}
+	[X_1,X_2] = aX_1f+bX_2f.
+\end{equation*}If one of the two numbers $a$ and $b$ were not zero, $b$ for example,
+we would have \begin{equation*}
+	\left[X_1,X_2+\frac{a}{b}X_1 \right] = b\left[X_2f+\frac{a}{b}X_1f \right],
+\end{equation*}so that the charateristic equation relative to $X_1f$ would admit
+the root $b$, which cannot be. Therefore $a=b=0$ and \begin{equation*}
+	[X_1,X_2]=0.
+\end{equation*}It is different when the group is rank $l>0$. Let $F$ be an invariant
+of the adjoint group, homogeneous and of degree $m$ in $e_1,e_2,\ldots,e_r$.
+Assume that the principal minor of $\Delta(0)$ is first order for
+some infinitesimal transformation $e_1^0 X_1 f+\ldots+e_r^0 X_r f$.
+Set \begin{equation*}
+	E_\mu f=\sum_{i=1}^r \alpha_{\mu i}\frac{\partial f}{\partial e_i}, \;\; (\mu=1,2,\ldots,r).
+\end{equation*}Calling $A_{ij}$ the minor of $\Delta(0)$ relative to $\alpha_{ij}$,
+we have \begin{align}
+	\sum_{i=1}^r \alpha_{\rho i} A_{\sigma i} &= 0, \;\; (\rho,\sigma =1,2,\ldots,r), \label{eq:11}\\
+	\sum_{i=1}^r \alpha_{i \rho} A_{i \sigma} &= 0, \;\; (\rho,\sigma =1,2,\ldots,r). \label{eq:12}
+\end{align}On the other hand \begin{align} 
+\sum_{i=1}^r \alpha_{\rho i} \frac{\partial F}{\partial e_i} &= 0, \;\; (\rho,\sigma =1,2,\ldots,r),\label{eq:13} \\
+\sum_{i=1}^r \alpha_{i \rho} e_i &= 0, \;\; (\rho,\sigma =1,2,\ldots,r),\label{eq:14}
+\end{align}As one of the minors, $A_{\alpha \beta}$ for example, is different
+from zero, we can pose, by comparing (\ref{eq:12}) and (\ref{eq:14}),
+\begin{equation} \label{eq:15}
+A_{i \sigma}=e_i \lambda_{\sigma}, \;\; (i,\sigma =1,2,\ldots, r),
+\end{equation}from which, using (\ref{eq:11}), \begin{equation*}
+e_\sigma \sum_{i=1}^r \lambda_i \alpha_{\rho i} = 0, \;\; (\rho, \sigma = 1,2,\ldots,r).
+\end{equation*}This results in \begin{equation} \label{eq:16}
+	\sum_{i=1}^r \alpha_{\rho i} \lambda_i = 0, \;\; (\rho = 1,2,\ldots,r).
+\end{equation}The $\lambda$ are not all zero because $\lambda_\beta \ne 0$, the
+comparison of (\ref{eq:12}) and (\ref{eq:16}) allows us to state
+\begin{equation} \label{eq:17}
+	\frac{\partial F}{\partial e_i} = \rho \lambda_i, \;\; (i=1,2,\ldots,r),
+\end{equation}which leads to\footnote{Cf. Lie, \emph{Transformationsgruppen}, III, p. 676 sqq., where similar
+conditions are applied, and where there is a polynomial $g(e_1,e_2,\ldots,e_r)$
+of degree $r-1$, which is simply $\psi_{r-1}(e)$} \begin{equation} \label{eq:18}
+	mF=\sum_{i=1}^r e_i \frac{\partial F}{\partial e_i} = \rho \sum_{i=1}^r e_i \lambda_i = \rho \sum_{i=1}^r A_{ii} = \rho \psi_{r-1}(e).
+\end{equation}\emph{Therefore if an infinitesimal transformation cancels $\psi_{r-1}(e)$
+without canceling all the minors of the first order of $\Delta(0)$,
+it cancels all the homogeneous invariants with non-zero degree of
+the adjoint group. }\\
+\emph{}\\
+If the characteristic equation relative to a certain infinitesimal
+transformation $X_1f$ admits $k$ zero roots $(1<k<r)$, this transformation
+certainly does not cancel the invariant $\psi_{r-k}(e)$, and consequently
+it cancels all the minors of the first order of $\Delta(0)$; i.e.,
+there is a commuting transformation $X_2f$ (such that $[X_1,X_2]=0$).\\
+\\
+But there is more; equation (\ref{eq:18}) is valid regardless of
+$e_1,e_2,\ldots,e_r$. Therefore if the group is rank $l>0$ or $\psi_{r-1}(e) \ne 0$,
+then $l=1$ or all the first order minors of $\Delta(0)$ are identically
+zero, and in that case every infinitesimal transformation commutes
+with at least one other.\\
+\\
+Recalling the earlier statements for the case $l=0$, we can state
+the following theorem:\\
+\\
+\textbf{\emph{Theorem VI. -}}\emph{ If the polynomial $\psi_{r-1}(e)$
+of the characteristic equation of a group is identically zero, every
+infinitesimal transformation of the group commutes with at least one
+other infinitesimal transformation.}\\
+\\
+If $\psi_{r-1}(e)\ne 0$ there is nothing more we can say. For example,
+in the group with three parameters $X_1f, X_2f, X_3f$: \begin{equation*}
+[X_1,X_2]=X_1f, \;\; [X_1,X_3]=2X_2f, \;\; [X_2,X_3]=X_3f,
+\end{equation*}we have \begin{equation*}
+\psi_{r-1}(e)=\psi_2(e)=4e_1 e_3-e_2^2;
+\end{equation*}$X_1f$ cancels $\psi_2(e)$, but does not commute with any other
+infinitesimal transformation of the group.\\
+\\
+Killing proved the previous theorem by noting that if $[X_1,X_2]=X_1f$,
+the characteristic equation relative to $X_1f$ has only zero roots,
+because \begin{equation*}
+c_{122}=c_{123}=\ldots=c_{12r}=0, \;\;\; c_{121}=1,
+\end{equation*}and therefore \begin{equation*}
+[E_2,\psi_i]_{\begin{smallmatrix}e_1=1 \\ \ldots \\ e_r=0 \end{smallmatrix}}
+=\left(\frac{\partial \psi_i}{\partial e_1} \right)_{\begin{smallmatrix}e_1=1 \\ \ldots \\ e_r=0 \end{smallmatrix}}
+=\frac{1}{i}(\psi_i)_{\begin{smallmatrix}e_1=1 \\ e_2=0 \\\ldots \\ e_r=0 \end{smallmatrix}}
+=0:
+\end{equation*}$X_1f$ cancels all the polynomials $\psi$.\\
+I do not insist on the rest of the proof and content myself with reference
+to Killing's work\footnote{See Killing, Z. v. G., I, \S5, p. 269 et II, \S10, p. 4}.\\
+\\
+\textbf{7.} That being the case, let us call with Killing $k$ the
+number of identically zero roots of the characteristic equation, and
+assume $k>1$. Take a \emph{general} infinitesimal transformation,
+i.e., for which $\psi_{r-k}(e) \ne 0$. We can always assume that
+$X_1f$ is such a transformation. Then, by Theorem VI, there exists
+at least one other commuting transformation $X_2f$ such that: \begin{equation*}
+	[X_1,X_2]=0.
+\end{equation*}The characteristic determinant relative to $X_1f$ is therefore \begin{equation*}
+	\Delta(\omega, 1, 0,\ldots,0)=\omega^2\vert c_{1ij}-\epsilon_{ij}\omega \vert, \;\; (i,j=3,4,\ldots,r).
+\end{equation*}If $k>2$, we can determine an infinitesimal transformation $X_3f$
+independent of $X_1f$ and $X_2f$, such that by combining it with
+$X_1f$, we obtain a transformation $aX_1f+bX_2f$, such that:\begin{equation*}
+	[X_1,X_3]=c_{131}X_1f+c_{132}X_2f;
+\end{equation*}therefore \begin{equation*}
+	\Delta(\omega,1,0,\ldots,0)=-\omega^3 \vert c_{1ij}-\epsilon_{ij}\omega\vert, \;\; (i,j=4,5,\ldots,r).
+\end{equation*}If $k>3$, we can also find a transformation $X_1f$ such that \begin{equation*}
+	[X_1,X_4] = c_{141}X_1f+c_{142}X_2f+c_{143}X_3f,
+\end{equation*}and so on, until \begin{equation*}
+	[X_1,X_k]=c_{1k1}X_1f+c_{1k2}X_2f+\ldots+c_{1kk-1}X_{k-1}f.
+\end{equation*}The characteristic determinant then reduces to\\
+\begin{equation*}
+	\Delta(\omega,1,0,\ldots,0)=(-1)^k\omega^k \vert c_{1ij} - \epsilon_{ij}\omega \vert, \;\; (i,j=k+1,\ldots,r).
+\end{equation*}As the characteristic equation relative to $X_1f$ admits only $k$
+zero roots, we have \begin{equation*}
+	\vert c_{1ij}\vert \ne 0, \;\; (i,j = k+1,\ldots,r),
+\end{equation*}and therefore it is impossible to find an infinitesimal transformation
+\begin{equation*}
+	e_{k+1}X_{k+1}f+\ldots+e_r X_rf,
+\end{equation*}such that \begin{equation*}
+	[X_1,e_{k+1}X_{k+1}+\ldots+e_r X_r] = \alpha_1 X_1f+\alpha_2 X_2f+\ldots+\alpha_k X_kf.
+\end{equation*}We have therefore made correspond to the general transformation $X_1f$,
+$k-1$ other transformations, $X_2f,X_3f,\ldots,X_kf$ I say that
+the $k$ transformations $X_1f,\ldots,X_kf$ form a group. I suppose,
+in fact, that we have shown that all the brackets $[X_i,X_j]$, where
+$i=1,2,\ldots,h$; $j=1,2,\ldots,k,(h<k)$, depend linearly on $X_1f,X_2f,\ldots,X_kf$;
+I say that it is still so for $i=1,2,\ldots,h+1$. Indeed we have\begin{equation*}
+	[X_1,[X_{h+1},X_{h+2}]]=\sum_{s=1}^h c_{1,h+1,s} [X_s,X_{h+2}]-\sum_{s=1}^h c_{1,h+2,s}[X_s,X_{h+1}],
+\end{equation*}hence it follows that $[X_{h+1},X_{h+2}]$ combined with $X_1f$,
+depends only on $X_1f,\ldots,X_kf$. Therefore, according to a remark
+made above, $[X_{h+1},X_{h+2}]$ also depends only on $X_1f,\ldots,X_kf$.\\
+\\
+We will have the same\begin{equation*}
+	[X_1,[X_{h+1},X_{h+3}]]=\sum_{s=1}^h c_{1,h+1,s} [X_s,X_{h+3}]-\sum_{s=1}^{h+2} c_{1,h+3,s}[X_s,X_{h+1}],
+\end{equation*}which proves the proposition for $[X_{h+1},X_{h+3}]$, and so on.\\
+\\
+Since the theorem is true for $h=1$, it follows that it is generally
+true, and hence the \emph{$k$ infinitesimal transformations $X_1f,X_2f,\ldots,X_kf$
+form a group}.\\
+\\
+I say this group is rank zero. Indeed, let us consider the characteristic
+equation relating to the subgroup $X_1f,...,X_kf$. It is written\begin{equation} \label{eq:2.19}
+	\begin{vmatrix}
+		\Sigma e_i c_{i11}-\omega & \ldots & \Sigma e_i c_{ik1} \\
+		\ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i1k} & \ldots & \Sigma e_i c_{ikk}-\omega
+	\end{vmatrix} \cdot
+	\begin{vmatrix}
+		\Sigma e_i c_{i,k+1,k+1}-\omega & \ldots & \Sigma e_i c_{i,r,k+1} \\
+		\ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i,k+1,r} & \ldots & \Sigma e_i c_{irr}-\omega
+	\end{vmatrix}=0
+\end{equation}the summations being extended from $1$ to $k$. This equation admits
+$k$ identically zero roots, because this is so, by hypothesis, with
+the general characteristic equation. However, the second determinant
+does not admit a zero root for\begin{equation*}
+	e_1=1, e_2=0,\ldots,e_k=0;
+\end{equation*}therefore, it does not admit any more within a certain domain around
+this system of values. Consequently the first determinant is, inside
+this domain, divisible by $\omega^k$, which is to say that we have
+identically\begin{equation} \label{eq:2.20}
+	\begin{vmatrix}
+		\sum_{s=1}^k e_s c_{sij}-\epsilon_{ij}\omega
+	\end{vmatrix} = (-1)^k\omega^k, \;\;\; (i,j=1,2,\ldots,k).
+\end{equation}In other words, \emph{the sub-group $X_1f,\ldots,X_kf$ is of rank
+zero}.\\
+\\
+Let us now take any general transformation belonging to this subgroup,
+that is to say $e_1 X_1f+\ldots+e_k X_kf$. We can never have an equality
+of form\begin{equation*}
+	[e_1 X_1+\ldots+e_k X_k, \lambda_{k+1}X_{k+1}+\ldots+\lambda_r X_r]=\beta_1 X_1f+\ldots+\beta_k X_kf
+\end{equation*}without all $\lambda$ being zero. It follows that the subgroup of
+order $k$ which corresponds to this infinitesimal transformation
+does not contain any transformation independent of $X_1f,\ldots,X_kf$,
+that is to say it coincides with the subgroup $X_1f,\ldots,X_kf$.\\
+\\
+\textbf{Theorem VII}\footnote{See Killing, Z. v. G., II, p. 7 and 8, and also Umlauf, loc. cit.,
+p. 24-32}\textbf{.} - \emph{Given a group of order $r$ whose characteristic
+equation admits $k$ identically zero roots, and $k$ only, any general
+transformation of this group is part of a subgroup of order $k$ and
+rank zero. This subgroup is not contained in any larger subgroup of
+rank zero}.\\
+\\
+\textbf{8.} Returning to the general transformation $X_1f$ and to
+the subgroup of rank zero, $X_1f,\ldots,X_kf$, of which it is a part.
+The infinitesimal transformations $X_{k+1}f,\ldots,X_rf$ have until
+now been subject only to the single condition of being independent
+of $X_1f,\ldots,X_kf$. We can take advantage of this to cancel all
+the coefficients\begin{equation*}
+	c_{1,k+i,j} \;\;\; (i=1,2,\ldots,r-k;\,j=1,2,\ldots,k).
+\end{equation*}In fact, we pose\begin{equation*}
+	X_{k+i}^\prime f=X_{k+i}f+\sum_{s=1}^k a_{k+i,s}X_sf, \;\;\; (i=1,2,\ldots,r-k).
+\end{equation*}Thus we have\begin{align*}
+	[X_1,X_{k+i}^\prime] =\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho} &
+	\left[X_{k+\rho}^\prime f-\sum_{s=1}^k a_{k+\rho,s}, X_sf \right]
+	+\sum_{s=1}^k c_{1,k+i,s}X_sf \\
+	&+ \sum_{\rho=1}^k a_{k+i,\rho}
+	\left(\sum_{s=1}^{\rho-1} c_{1\rho s}X_sf\right), \;\;\; (i=1,2,\ldots,r-k).
+\end{align*}We therefore need to solve the following systems of equations, obtained
+by setting the coefficients of $X_kf,X_{k-1}f,\ldots,X_1f$ to 0,
+in the second element:\\
+%N.B. index variable "rho" in the original text, RHS of 3rd and 4th equations, appears to be a scrivener's error - changed to "s"\\
+\begin{align*}
+	&\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho} a_{k+\rho,k}=c_{1,k+i,k}, &&(i=1,2,\ldots,r-k) \\
+	&\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho} a_{k+\rho,k-1}=c_{1,k+i,k-1}-a_{k+i,k} c_{1,k,k-1}, &&(id.) \\
+	&\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho} a_{k+\rho,k-2}=c_{1,k+i,k-2}-
+		\sum_{s=k-1}^k a_{k+i,s} c_{1,s,k-2}, &&(id.) \\
+	&\ldots \ldots \ldots \ldots\ldots \ldots\ldots \ldots\ldots \ldots\ldots \ldots\ldots \ldots\ldots \ldots\\
+	&\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho} a_{k+\rho,1}=c_{1,k+i,1}-
+		\sum_{s=2}^k a_{k+i,s} c_{1,s,1}, &&(id.) 
+\end{align*}We see that the first system completely determines the quantities
+$a_{k+i,k}$; this system being solved, the second determines the
+quantities $a_{k+i,k-1}$, and so on.\\
+\\
+We can therefore assume that we have relations of the form\begin{equation} \label{eq:2.21}
+	[X_1,X_{k+i}]=c_{1,k+i,k+1} X_{k+1}f+\ldots+c_{1,k+i,r}X_rf, \;\;\; (i=1,2,\ldots,r-k).
+\end{equation}I say further that if we have $r-k$ infinitesimal transformations
+of the group, $Y_{k+1}f,\ldots,Y_rf$, where\begin{equation*}
+	Y_{k+i}f=\sum_{s=1}^r \lambda_{k+i,s}X_sf, \;\;\; (i=1,2,\ldots,r-k),
+\end{equation*}such that\begin{equation} \label{eq:2.22}
+	[X_1,Y_{k+i}]=\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho}Y_{k+\rho}f+\sum_{\rho=1}^{r-k}\alpha_{i,k+\rho}X_{k+\rho}f,
+	\;\;\; (i=1,2,\ldots,r-k),
+\end{equation}the constants $c_{1,k+i,k+\rho}$ being the same as in equation (\ref{eq:2.21}),
+the transformations $Y_{k+1}f,\ldots,Y_rf$ depend only on $X_{k+1}f,\ldots,X_rf$.
+Indeed, we equate, in the two sides of (\ref{eq:2.22}), the coefficients
+of $X_kf,X_{k-1}f,\ldots,X_1f$, assuming that the left side, $[X_1,Y_{k+i}]$,
+is replaced by the value\begin{equation*}
+	[X_1,Y_{k+i}]=\sum_{\rho,s=1}^r \lambda_{k+i,\rho}c_{1\rho s}X_sf.
+\end{equation*}We will first have\begin{equation*}
+	0=\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho}\lambda_{k+\rho,k}, \;\;\; (i=1,2,\ldots,r-k),
+\end{equation*}which gives $\lambda_{k+i,k}=0$; then\begin{equation*}
+	0=\sum_{\rho=1}^{r-k} c_{1,k+i,k+\rho}\lambda_{k+\rho,k-1}, \;\;\; (i=1,2,\ldots,r-k),
+\end{equation*}which gives $\lambda_{k+i,k-1}=0$, and so on, which is what we needed
+to prove.\\
+\\
+That being the case, we will have\begin{equation*}
+	[X_1,[X_2,X_{k+i}]]=[X_2,[X_1,X_{k+i}]]=\sum_{s=1}^{r-k} c_{1,k+i,k+s}[X_2,X_{k+s}], \; (i=1,2,\ldots,r-k),
+\end{equation*}which shows that $[X_3,X_{k+i}]$ depends only on $X_{k+1}f,\ldots,X_rf$.
+We continue in this way step by step. We thus arrive at the following
+formula:\begin{equation} \label{eq:2.23}
+	[X_i,X_{k+j}]=\sum_{s=1}^{r-k} c_{i,k+j,k+s}X_{k+s}f, \;\;\; (i=1,2,\ldots,k;\,j=1,2,\ldots,r-k).
+\end{equation}The subgroup $X_1f,\ldots,X_kf$ leaves the family of infinitesimal
+transformations $e_{k+1}X_{k+1}f+\ldots+e_r X_rf$ invariant.\\
+\\
+\textbf{Theorem VIII}\footnote{Cf. Umlauf, loc. cit., p. 31.}\textbf{.}
+- \emph{If $X_1f,\ldots,X_kf$ designates the largest subgroup of
+rank zero containing the general transformation $X_1f$, there exists
+$r-k$ independent transformations of the first $k$: $X_{k+1}f,\ldots,X_rf$,
+and such that the subgroup $X_1f,\ldots,X_kf$ leaves the family of
+transformations $e_{k+1}X_{k+1}f+\ldots+e_r X_rf$} \emph{invariant}.\\
+\\
+\textbf{9.} We will always assume that in the subgroup of rank zero
+$X_1f,\ldots,X_kf$, the transformation $X_1f$ is general. Then the
+characteristic equation relating to $X_1f$ admits $r-k$ roots other
+than zero. Suppose that among these $r-k$ roots, there are $p$ distinct
+ones, which we will denote by $a_1,a_2,\ldots,a_p$; let $m_1,m_2,\ldots,m_p$
+be their degrees of multiplicity. So by proceeding in the same way
+as in \S7, we will see that we can assume $X_{k+1}f,\ldots,X_rf$
+are chosen in the following way. We set\begin{equation*}
+	k+m_1=k_1, \;\;\; k_1+m_2=k_2, \;\;\; \ldots, \;\;\; k_{p-1}+m_p=k_p=r.
+\end{equation*}We then have\begin{align}
+	\begin{split} \label{eq:2.24}
+		&[X_1,X_{k_{i-1}+1}]=a_i X_{k_{i-1}+1}f, \\
+		&[X_1,X_{k_{i-1}+2}]=a_i X_{k_{i-1}+2}f+c_{1,k_{i-1}+2,k_{i-1}+1}X_{k_{i-1}+1}f, \\
+		&\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+		&[X_1,X_{k_i}]=a_i X_{k_i}f+c_{1,k_i,k_{i-1}}X_{k_{i-1}}f+\ldots+c_{1,k_i,k_{i-1}+1}X_{k_{i-1}+1}f. \\
+		&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;  (i=1,2,\ldots,p), \; (k_0=k). 
+	\end{split}
+\end{align}Moreover, by reasoning already done in \S8, we see that if an infinitesimal
+transformation $Yf$ satisfies, for example, the relation\begin{equation*}
+	[X_1,Y]=a_1Yf+\alpha_1 X_{k+1}f+\ldots+\alpha_{k_1-k}X_{k_1}f.
+\end{equation*}$Yf$ only depends on $X_{k+1}f,\ldots,X_{k_1}f$. As a result, all
+brackets \begin{equation*}
+	[X_i,X_{k+1}], [X_i,X_{k+2}],\ldots,[X_i,X_{k1}], \;\;\; (i=1,2,\ldots,k)
+\end{equation*} only depend on $X_{k+1}f,\ldots,X_{k_1}f$. in other words the subgroup
+of rank zero leaves the family of transformations $e_{k+1}X_{k+1}f+...+e_{k_1}X_{k_1}$
+invariant.\\
+\\
+It follows that the characteristic determinant relating to the subgroup
+of rank zero $X_1f,\ldots,X_kf$ decomposes into a product of $p+1$
+determinants:\begin{equation*}
+	\begin{vmatrix}
+		\Sigma e_i c_{i11}-\omega & \ldots & \Sigma e_i c_{ik1} \\
+		\ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i1k} & \ldots & \Sigma e_i c_{ikk}-\omega
+	\end{vmatrix} \cdot
+	\begin{vmatrix}
+		\Sigma e_i c_{i,k+1,k+1}-\omega & \ldots & \Sigma e_i c_{i,k_1,k+1} \\
+		\ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i,k+1,k_1} & \ldots & \Sigma e_i c_{i,k_1,k_1}-\omega
+	\end{vmatrix} \ldots,
+\end{equation*}the summations being extended from $1$ to $k$. The first of these
+determinants reduces as we have already seen to $(-w)^k$; the second
+is reduced to\begin{equation}
+	e_1=1, \, e_2=\ldots =e_k=0, \, \text{at } (a_1-\omega)^{m_1},
+\end{equation}and so on. If one of these determinants, the second for example, were
+not, for any $e_1,e_2,\ldots,e_k$, a perfect power with respect to
+$\omega$, there would be at least one general transformation of the
+form $e_1 X_1f+\ldots+e_k X_k f$ for which the roots of the characteristic
+equation derived from this determinant would not all be equal. Then
+we could push the decomposition of the characteristic determinant
+further. We can assume that we have the following relation:\begin{equation} \label{eq:2.25}
+	\begin{vmatrix}
+		\Sigma e_i c_{i,k+1,k+1}-\omega & \ldots & \Sigma e_i c_{i,k_1,k+1} \\
+		\ldots & \ldots & \ldots \\
+		\Sigma e_i c_{i,k+1,k_1} & \ldots & \Sigma e_i c_{i,k_1,k_1}-\omega
+	\end{vmatrix}=(\omega_1-\omega)^{m_1},
+\end{equation}$\omega_1$ being a certain function of $e_k$, and the same for the
+other $p-1$ determinants. In this way the characteristic equation
+relating to the subgroup $X_1f,\ldots,X_kf$ admits $p+1$ distinct
+roots, namely:\begin{equation*}
+	0,\omega_1,\omega_2,\ldots,\omega_p.
+\end{equation*}We have, moreover, by virtue of (\ref{eq:2.25}),\begin{equation} \label{eq:2.26}
+	\sum_{i=1}^k e_i\left(\sum_{\rho=1}^{m_1} c_{i,k+\rho,k+\rho}\right)=m_1\omega_1,
+\end{equation}which shows that these roots $\omega_1,\omega_2,\ldots,\omega_p$
+are homogeneous linear functions of $e_1,e_2,\ldots,e_k$, that is
+to say\begin{equation} \label{eq:2.27}
+	\omega_i=\omega_i^{(1)}e_1+\omega_i^{(2)}e_2+\ldots+\omega_i^{(k)}e_k, \;\;\; (i=1,2,\ldots,p).
+\end{equation}\\
+\\
+\textbf{Theorem IX.} - \emph{If $e_1 X_1f+\ldots+e_k X_kf$ is the
+most general infinitesimal transformation of the largest subgroup
+of rank zero which contains a given general transformation, the characteristic
+determinant relative to this subgroup decomposes into a product of
+linear and homogeneous factors in $\omega, e_1, e_2,\ldots,e_k$}.\\
+\\
+This theorem is proved by Killing only under the assumption that the
+transforms $X_1f,\ldots,X_kf$ commute with each other\footnote{Killing, Z. v. G., II, p. 9-12.}.
+This fact arises, according to him, as soon as the given group does
+not contain a distinguished infinitesimal transformation\footnote{Killing, Z. v. G., II, p. 8 and 9; the proof, which is based on the
+theory of groups of rank zero, is made only in the case where the
+roots of the characteristic equation are all simple.}; however in his 3\textsuperscript{rd} paper (\emph{Math. Ann}.,
+t. 34, p. 66) he restricts the theorem to the case where the group
+is its own derived group and where there is no distinguished transformation.
+We will come back to this later and we will give an example where
+the theorem is not verified.\\
+\\
+\textbf{10.} From now on we will designate the subgroup of order $k$
+and rank zero which contains a given general transformation as a \emph{subgroup
+$\gamma$ relative to this transformation}. The roots $0,\omega_1,\omega_2,\ldots,\omega_p$
+of the characteristic equation relative to this subgroup will be designated,
+as long as there is no fear of confusion, as \emph{roots of the characteristic
+equation}. The infinitesimal transformations $X_{k+1}f,\ldots,X_{k_1}f$
+(see \S9) will be said to b\emph{elong to the root $\omega_1$} (with
+respect to the $\gamma$ subgroup); by analogy the transformations
+$X_1f,\ldots,X_kf$ of the $\gamma$ subgroup will be said to \emph{belong
+to the root }$0$.\\
+\\
+The choice of independent infinitesimal $r$ transformations\begin{equation*}
+	X_1f,\ldots,X_kf,X_{k+1}f,\ldots,X_{k_1}f,\ldots,X_rf,
+\end{equation*}made as set forth in the preceding paragraphs, will constitute what
+we will call \emph{a reduced form of the group relating to the subgroup}
+$\gamma$: $X_1f,\ldots,X_kf$.\\
+\\
+From now on to simplify the notation, we will denote by $X_{01}f,\ldots,X_{0k}f$
+the infinitesimal transformations of the $\gamma$ subgroup; by $X_{11}f,\ldots,X_{1m_1}f$
+those which \emph{belong} to the root $\omega_1,\ldots$, by $X_{p1}f,\ldots,X_{pm_p}f$
+those which \emph{belong} to the root $\omega_p$. We will agree by
+symmetry to set $\omega_0=0, m_0=k$. Then\begin{equation*}
+	m_0+m_1+\ldots+m_p=r.
+\end{equation*}All that we have just said applies naturally to the particular cases
+of $k=r$ (groups of rank zero) and of $k=1$; in the latter case,
+the $\gamma$ subgroup contains only one infinitesimal transformation.\\
+\\
+\textbf{11.} Given an arbitrary infinitesimal transformation belonging
+to the root $\omega_\alpha$, $\mathscr{X}_{\alpha 1}f$, consider
+a transformation of the $\gamma$ subgroup, $X_{01}f$. If $[X_{01},\mathscr{X}_{\alpha 1}]$
+is not equal to $\omega_\alpha^{(1)}\mathscr{X}_{\alpha 1}f$, we
+will set\begin{equation*}
+	[X_{01},\mathscr{X}_{\alpha 1}]=\omega_\alpha^{(1)}\mathscr{X}_{\alpha 1}f+\mathscr{X}_{\alpha 2}f
+\end{equation*}and similarly\begin{equation*}
+	[X_{01},\mathscr{X}_{\alpha 2}]=\omega_\alpha^{(1)}\mathscr{X}_{\alpha 2}f+\mathscr{X}_{\alpha 3}f
+\end{equation*}and so on until\begin{equation*}
+	[X_{01},\mathscr{X}_{\alpha h}]=\omega_\alpha^{(1)}\mathscr{X}_{\alpha h}f,
+\end{equation*}where the integer number $h$ certainly cannot be larger than $m_a$,
+the degree of multiplicity of the root $\omega_a$. However, if an
+invariant subgroup contains the $\mathscr{X}_{\alpha 1}f$ transformation,
+it will also contain $\mathscr{X}_{\alpha 2}f,\mathscr{X}_{\alpha 3}f,\ldots,\mathscr{X}_{\alpha h}f$.\\
+\\
+Suppose then that an invariant subgroup contains an infinitesimal
+transformation of the form\begin{equation*}
+	\mathscr{X}f=\mathscr{X}_{\alpha 1}f+\mathscr{X}_{\beta 1}f+\mathscr{X}_{\delta 1}f+\ldots,
+\end{equation*}where $\mathscr{X}_{\alpha 1}f,\mathscr{X}_{\beta 1}f$ are infinitesimal
+transformations which belong respectively to the roots $\omega_\alpha, \omega_\beta, \omega_\delta,...$.
+If, as we can always assume, the $p+1$ roots of the characteristic
+equation relative to $X_{\alpha 1}f$ are all distinct, the invariant
+subgroup will contain\begin{equation*}
+	\mathscr{X}^\prime f=[X_{01},\mathscr{X}]-\omega_\alpha^{(1)}\mathscr{X}f
+	=\mathscr{X}_{\alpha 2}f+((\omega_\beta^{(1)}-\omega_\alpha^{(1)}\mathscr{X}_{\beta 1}f
+	+\mathscr{X}_{\beta 2}f)+\ldots.
+\end{equation*}If I prove that the invariant subgroup contains each of the transformations
+\begin{equation*}
+	\mathscr{X}_{\alpha 2}f,\;
+	(\omega_\beta^{(1)}-\omega_\alpha^{(1)})\mathscr{X}_{\beta 1}f +\mathscr{X}_{\beta 2}f,\ldots,
+\end{equation*} then it will contain \begin{equation*}
+	(\omega_\beta^{(1)}-\omega_\alpha^{(1)})\mathscr{X}_{\beta 2}f +\mathscr{X}_{\beta 3}f,\ldots,
+	(\omega_\beta^{(1)}-\omega_\alpha^{(1)})\mathscr{X}_{\beta h'}f
+\end{equation*}($h^\prime$ denoting the number analogous to $h$), and therefore,
+with $\omega_\beta^{(1)}\ne\omega_\alpha^{(1)}$, it will also contain
+\begin{equation*}
+	\mathscr{X}_{\beta,h^\prime-1}f,\ldots,\mathscr{X}_{\beta 1}f.
+\end{equation*}The invariant subgroup will contain $\mathscr{X}_{\beta 1}f, \, \mathscr{X}_{\delta 1}f,\ldots$
+and consequently $\mathscr{X}_{\alpha 1}f$. But we can perform on
+$\mathscr{X}^\prime f$ the same operation as on $\mathscr{X} f$
+until there are no more transformations belonging to the root $\omega_\alpha$,
+then until there is no longer any transformation belonging to $\omega_\beta$,
+etc. Finally, we will reduce the problem to the case where there is
+a single transformation belonging to a determined root; it then obviously
+belongs to the invariant subgroup.\\
+\\
+\textbf{Theorem X}\footnote{Killing, Z. v. G., III, p. 72-73; the theorem is proved in the case
+where all the roots are simple.}. -\emph{Given a group $G$ of order $r$ in a reduced form relative
+to a given $\gamma$ subgroup, any invariant subgroup of $G$ is completely
+determined by those of its infinitesimal transformations which belong
+to the different roots of the relative characteristic equation to
+the gamma subgroup, in the sense that all the other transformations
+of the invariant subgroup are linearly deduced from them}.\\
+\\
+\textbf{12.} Given two transformations, one belonging to the root
+$\omega_a$, the other to the root $\omega_b$, what can be said of
+their bracket?\\
+\\
+Suppose first that $\omega_a+\omega_b$ is not a root of the characteristic
+equation. So we can always assume that $\omega_a^{(1)}+\omega_b^{(1)}$
+is none of the quantities $0,\omega_1^{(1)},\omega_2^{(1)},\ldots,\omega_p^{(1)}$.
+We can then consider the transformations $X_{\alpha 1}f,\ldots,X_{\alpha m_\alpha}f$
+chosen in such a way that\begin{equation*}
+	[X_{01},X_{\alpha i}]=\omega_\alpha^{(1)}X_{\alpha i}f+\lambda_{i1}X_{\alpha 1}f+\lambda_{i2}X_{\alpha 2}f
+	+\ldots+\lambda_{i,i-1}X_{\alpha,i-1}f, \; (i=1,2,\ldots,m_\alpha),
+\end{equation*}and the same for $X_{\beta 1}f,\ldots,X_{\beta m_\beta}f$. As such,
+we will have\begin{equation*}
+	[X_{01},[X_{\alpha 1},X_{\beta 1}]]=(\omega_\alpha^{(1)}+\omega_\beta^{(1)})[X_{\alpha 1},X_{\beta 1}],
+\end{equation*}and since the characteristic equation relating to $X_{01}f$ does
+not admit the root $\omega_\alpha^{(1)}+\omega_\beta^{(1)}$ we deduce
+$[X_{\alpha 1},X_{\beta 1}]=0$.\\
+\\
+We then have, taking this result into account,\begin{equation*}
+	[X_{01},[X_{\alpha 1},X_{\beta 2}]=(\omega_\alpha^{(1)}+\omega_\beta^{(1)})[X_{\alpha 1},X_{\beta 2}],
+\end{equation*}hence $[X_{\alpha 1},X_{\beta 2}]=0,$ and so on. We see, step by
+step, that all the brackets $[X_{\alpha i},X_{\beta j}]$ are zero.\\
+\\
+Now suppose that $\omega_\alpha+\omega_\beta$ is a root, $\omega_\delta$
+for example. We can assume that all the roots $0,\omega_1^{(1)},\ldots,\omega_p^{(1)}$
+are distinct. So we will have\begin{equation*}
+	[X_{01}[X_{\alpha 1},X_{\beta 1}]]=\omega_\delta^{(1)}[X_{\alpha 1},X_{\beta 1}],
+\end{equation*}which shows that $[X_{\alpha 1},X_{\beta 1}]$ belongs to the root
+$\omega_\delta$ and is deduced linearly from $X_{\delta 1}f,X_{\delta 2}f,\ldots,X_{\delta m_\delta}f$.
+Moreover\begin{equation*}
+	[X_{01},[X_{\alpha 2},X_{\beta 1}]]=\omega_\delta^{(1)}[X_{\alpha 2},X_{\beta 1}]+\lambda_{21}[X_{\alpha 1},X_{\beta 1}],
+\end{equation*}hence, from a previous remark (\S9), we see that $[X_{\alpha 2},X_{\beta 1}]$
+still belongs to the root $\omega_\delta$, and so on.\\
+\\
+\textbf{Theorem XI}\footnote{See Killing, Z. v. G., I, p. 280 sqq.; II, p. 14; III, p. 69.}\textbf{.}
+-\emph{The bracket of two infinitesimal transformations belonging
+respectively to the roots $\omega_\alpha$ and $\omega_\beta$ is
+zero if $\omega_\alpha+\omega_\beta$ is not a root, and belongs to
+the root $\omega_\delta$ if $\omega_\alpha+\omega_\beta=\omega_\delta$}.\\
+\\
+The indices $\alpha,\beta,\delta$ are arbitrary in the sequence $0,1,2,\ldots,p$.
+If in particular $\omega_\beta=-\omega_\alpha$, the brackets $[X_{\alpha i},X_{\beta j}]$
+belong to the $\gamma$ subgroup.\\
+\\
+\textbf{13.} In the latter case, we will find a remakable relation
+between the roots of the characteristic equation relating to such
+a transformation $[X_{\alpha i},X_{\beta j}]$ of the subgroup $\gamma$
+$(\omega_\beta = -\omega_\alpha)$.\\
+\\
+To simplify the notation, let $\mathscr{X}_\alpha f$ and $\mathscr{X}_{\alpha^\prime} f$
+be two transformations belonging respectively to the roots $\omega_\alpha$
+and $\omega_{\alpha^\prime}=-\omega_\alpha$. Let $\omega_\beta$
+be any root of the characteristic equation relating to the subgroup
+$\gamma$; among the roots of the form $\omega_\beta+m\omega_\alpha$,
+$m$ being a positive or negative integer, let $\omega_\beta+h\omega_\alpha$
+be the one for which $m$ is the largest and $\omega_\beta-h^\prime \omega_\alpha$
+the one for which $m$ is the smallest. We set\begin{align*}
+	\omega_\beta+\omega_\alpha&=\omega_\gamma, & \omega_\gamma+\omega_\alpha&=\omega_\delta,
+		&&\ldots, & \omega_\chi+\omega_\alpha&=\omega_\lambda=\omega_\beta+h\omega_\alpha, \\
+	\omega_\beta-\omega_\alpha&=\omega_\mu, & \omega_\mu+\omega_\alpha&=\omega_\nu,
+		&&\ldots, & \omega_\rho-\omega_\alpha&=\omega_\sigma=\omega_\beta-h^\prime\omega_\alpha,
+\end{align*}Finally, set\begin{align*}
+	[\mathscr{X}_\alpha,\mathscr{X}\alpha^\prime]&=\sum_{i=1}^k e_{0i}X_{0i}f, \\
+	[\mathscr{X}_\alpha,X_{\beta i}]&=\sum_{j=1}^{m_\gamma} a_{(\beta i)(\gamma j)}X_{\gamma j}f, \;\;\;
+		(i=1,2,\ldots,m_\beta), \\
+	[\mathscr{X}_{\alpha^\prime},X_{\gamma i}]&=\sum_{j=1}^{m_\beta} b_{(\gamma i)(\beta j)}X_{\beta j}f, \;\;\;
+		(i=1,2,\ldots,m_\gamma),
+\end{align*}and analogous relationships. Then write the Jacobi identities\footnote{I define the abbreviation $\overline{X_iX_jX_k}=[[X_i,X_j],X_k]+[[X_j,X_k],X_i]+[[X_k,X_i],X_j]$.}\begin{equation*}
+	\overline{\mathscr{X}_\alpha \mathscr{X}_{\alpha^\prime}X_{\beta i}} =
+	\overline{\mathscr{X}_\alpha \mathscr{X}_{\alpha^\prime}X_{\gamma j}} = \ldots = 0.
+\end{equation*}We will then have, in particular\begin{align*}
+	&\sum_{\omega=1}^k e_{0\omega}c_{(0\omega)(\sigma i)(\sigma i)}
+		=-\sum_{j=1}^{m_\rho} a_{(\sigma i)(\rho j)}b_{(\rho j)(\sigma i)}, \;\;\; (i=1,2,\ldots,m_\sigma),\\
+	&\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+	&\sum_{\omega=1}^k e_{0\omega}c_{(0\omega)(\mu i)(\mu i)}=
+		-\sum_{j=1}^{m_\beta} a_{(\mu i)(\beta j)}b_{(\beta j)(\mu i)} +
+		\sum_{j=1}^{m_\nu} b_{(\mu i)(\nu j)}a_{(\nu j)(\mu i)},    \; (i=1,2,\ldots,m_\mu),\\
+	&\sum_{\omega=1}^k e_{0\omega}c_{(0\omega)(\beta i)(\beta i)}=
+		-\sum_{j=1}^{m_\gamma} a_{(\beta i)(\gamma j)}b_{(\gamma j)(\beta i)} +
+		\sum_{j=1}^{m_\mu} b_{(\beta i)(\mu j)}a_{(\mu j)(\beta i)},    \; (i=1,2,\ldots,m_\beta),\\
+	&\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots \\
+	&\sum_{\omega=1}^k e_{0\omega}c_{(0\omega)(\lambda i)(\lambda i)}
+		=+\sum_{j=1}^{m_\chi} b_{(\lambda i)(\chi j)}a_{(\chi j)(\lambda i)}, \;\;\; (i=1,2,\ldots,m_\lambda),
+\end{align*}Add element by element all the equalities we get in this manner. This
+gives\begin{equation*}
+	\sum_{\omega=1}^k e_{0\omega}(m_\sigma \omega_\sigma^{(\omega)}+\ldots+m_\mu \omega_\mu^{(\omega)}+
+	m_\beta \omega_\beta^{(\omega)}+\ldots+m_\lambda \omega_\lambda^{(\omega)})=0,
+\end{equation*}and\begin{align} 
+	(m_\sigma+m_\rho+\ldots+m_\beta&+m_\gamma+\ldots+m_\lambda)\sum_{i=1}^ke_{0i}\omega_\beta^{(i)}\label{eq:2.28}\\
+	&=(h^\prime m_\sigma+\ldots+m_\mu-m_\gamma-\ldots-hm_\lambda)\sum_{i=1}^k e_{0i}\omega_\alpha^{(i)}.\notag
+\end{align}As the coefficient $m_\sigma+m_\rho+\ldots$ is certain to be different
+from 0, we see that we can state the following theorem:\\
+\\
+\textbf{Theorem XII}\footnote{Cf. Killing, Z. v. G., II, p. 15 and 16.}.
+\emph{If we consider the transformation of the subgroup $\gamma$
+obtained by combining two transformations belonging respectively to
+equal roots with opposite signs $\omega_\alpha$ and $-\omega_\alpha$,
+the roots of the characteristic equations relating to this transformation
+are real and commensurable multiples of one of them, namely the root
+$\omega_\alpha$ itself.}\\
+\\
+If the root $\omega_\alpha$ relating to this transformation is zero,
+all the others are zero\footnote{Cf. Killing, Z. v. G., III, p. 80, 99.};
+this is certainly what occurs if $\alpha=0$, that is to say if we
+combine two gamma transformations.\\
+\\
+\textbf{Corollary}\footnote{Cf. Killing, Z. v. G., III, p. 59 sqq.}.
+- \emph{The characteristic equation relating to the group derived
+from the $\gamma$ subgroup has all its roots equal to zero.}\\
+\emph{}\\
+\textbf{14.} Finally a formula analogous to formula (\ref{eq:2.28})
+is obtained by considering the roots of the form $m\omega_\alpha$,
+$m$ being a positive integer. If $h$ is the largest possible value
+of the integer $m$, and setting\begin{equation*}
+	\omega_{\alpha_i}=\omega_\alpha, \;\;\; \omega_{\alpha_2}=2\omega_\alpha,\;\;\;\ldots,\;\;\;
+	\omega_{\alpha_h}=h\omega_\alpha,
+\end{equation*}we have\begin{gather} 
+	(m_{\alpha_1}+m_{\alpha_2}+\ldots+m_{\alpha_h}
+	\sum_{\rho=1}^k c_{(\alpha i)(\alpha^\prime j)(0\rho)}\omega_\alpha^{(\rho)}=
+	\sum_{\omega,\rho} c_{(\alpha \omega)(\alpha^\prime f)(0\rho)}
+		c_{(0\rho)(\alpha i)(\alpha\omega)},\label{eq:2.29} \\
+	(i=1,2,\ldots,m_\alpha;\;j=1,2,\ldots,m_{\alpha^\prime}) \notag
+\end{gather}We see in particular that if we have, for any $\rho$\begin{equation*}
+	[X_{0\rho},X_{\alpha i}]=\omega_\alpha^{(\rho)}X_{\alpha i}f,
+\end{equation*}we obtain the result\begin{equation*}
+	(m_{\alpha_1}+m_{\alpha_2}+\ldots+m_{\alpha_h}-1)
+	\sum c_{(\alpha i)(\alpha^\prime j)(0\rho)}\omega_\alpha^{(\rho)}=0;
+\end{equation*}or if the root $\omega_\alpha$ is simple, there is no other root
+of the form $m\omega_\alpha$ $(m>1)$; or else the characteristic
+equation relative to $[X_{\alpha i},X_{\alpha^\prime j}]$ has, for
+any $j$, all its roots equal to zero\footnote{Cf. Killing, Z. v. G., III, p. 89.}.\\
+\\
+\textbf{15.} The first eight paragraphs of this chapter are, apart
+from a few small changes (\S6), only a summary of the first part
+of the cited thesis by Umlauf; they contain the proofs of theorems
+due to Killing, but where precision and rigor were lacking. It is
+in large part to Engel that the proofs I have mentioned are due.\\
+\\
+The theorems discussed in the last paragraphs also belong to Killing,
+although Theorem XII is nowhere stated in all of its generality. But
+Killing is limited in his papers to the case where all the non-zero
+roots of the characteristic equation are distinct; or at least when
+he examines the general case, he assumes that the transformations
+of the $\gamma$ subgroup all commute with each other, which, according
+to him, occurs whenever the group is its own derived group or admits
+no distinguished transformation. However, this last assertion is incorrect,
+and, even if it were correct, Killing would not have proved in full
+generality Theorems IX, X, XI and XII, which are fundamental.\\
+\pagebreak\\
+
+
+\section*{Chapter III: Classification of Groups Following Lie. Integrable Groups.
+Groups of Rank Zero.}
+
+\textbf{1.} Lie has long since\footnote{\emph{Archiv for Math. og Nat.}, 1878, t. 3, p. 112-116. The notion
+of an integrable group was first introduced by Lie in 1874 in the
+Comptes Rendus de l'Acad. des Sc. de Christiania; the name itself
+of the integrable group is found for the first time in the \emph{Leipziger
+Berichte}, 1889.} divided groups into two large classes, \emph{integrable} groups and
+\emph{non-integrable} groups.\\
+\\
+We say that a group is \emph{integrable} when the order of its successive
+derivative groups is constantly decreasing until one of them reduces
+to the identity transformation. A group is \emph{non-integrable} when
+from a certain rank, all its derived groups are the identity, while
+being of an order greater than zero.\\
+\\
+It follows immediately from this definition that\emph{ any subgroup
+of an integrable group is integrable, that if the group derives from
+a given group is integrable, the group itself is integrable}, that
+\emph{the order of the derived group of a given integrable group is
+smaller than that of the group}.\\
+\\
+If $G$ is an integrable group of order $r$, $G_1$, its derived
+group of order $r_1<r$, $G$ admits at least one invariant subgroup
+of order $r-1$; it suffices to add to $G_1$ $r-r_1-1$ arbitrary
+infinitesimal transformations independent of each other. Such an invariant
+subgroup being itself integrable, admits an invariant subgroup with
+$r-2$ parameters, and so on.\\
+\\
+\textbf{Theorem I}. - \emph{If a group of order $r$ is integrable,
+it admits an invariant subgroup of order $r-1$, having in turn an invariant
+subgroup of order $r-2$, and so on}.\\
+\\
+This is also the first definition that Lie gave of integrable groups.\\
+\\
+The converse of the theorem is obvious, because if a group of order
+$r$ admits an invariant subgroup with $r-1$ parameters, its derived
+group is a subgroup of this invariant subgroup.\\
+\\
+There is more. Lie, starting from the fact that any infinitesimale, linear and 
+homogeneous transformation in $x_1,x_2,\ldots,x_n$ leaves invariant at least one 
+point $x_1:x_2:\ldots:x_n$, and that any multiplicity invariant by an invariant 
+subgroup $g$ of a group $G$ is transformed by $G$ in a multiplicity invariante by $g$,
+proving that any integrable group, linear and homogenous, leaves invariant at least one point,
+one line passing through this point, one plane in two dimensions passing through this line, etc. 
+Applying this to the adjoint group of an integrable group, we arrive at the next Theorem, 
+due to Lie\footnote{V. Lie, \emph{Transformationsgruppen, III}, p. 678 sqq.}\\
+\\
+\textbf{Theorem II}. - \emph{Any integrable group of order $r$ contains an invariant subgroup
+of order 1, which is contained in an invariant subgroup of order 2, the latter in a sub-group of order 3, and so on; so that we can find $r$ independent infinitesimal transformations $X_1f,X_2f,\ldots,X_rf$ 
+such that}
+\begin{equation} \label{eq55}
+	[X_i,X_{i+k}]=\sum_{s=1}^i c_{i,i+k,s}X_sf, \;\; (i=1,2,\ldots,r; \,k=1,2,\ldots,r-i).
+\end{equation}
+In the context of theorem I, the sub-group of order $q(q=1,2,\ldots,r-1)$ is invariant only in the
+subgroup of order $q+1$.\\
+\\
+\textbf{2. } Equation (\ref{eq55}) immediately gives us the form of the characteristic equation of an integrable group.\\
+\\
+Indeed we have
+\begin{equation}
+	\Delta(\omega)=-\omega\prod_{i=1}^{r-1}\left(\sum_{\rho=i-1}^r e_\rho c_{\rho ii}-\omega \right).
+\end{equation}
+\emph{The characteristic determinant of an integrable group decomposes into a product of factors 
+linear in $\omega, e_1,e_2,\ldots,e_r$. }\\
+\\
+If we refer to the corollary of Theorem II of chap. II, we see that these linear forms 
+$\Sigma e_\rho c_{\rho ii} (i=1,2,\ldots,r) $ are the invariants of the adjoint group. Therefore, 
+they cancel each other out identically for the derived group (I, 9). So (II, 3, th.III):\\
+\\
+\textbf{Theorem III}. - \emph{A group derived from an integrable group is of zero rank.}\\
+\\
+Killing (Z, v.G., I, p. 269) clearly states the property of the derived group to be of rank zero, when the coefficients of the characteristic equation of the group can be expressed as a function of $l$ linear forms in $e_1,e_2,\ldots,e_r$, $l$ being the rank of the group; but nowhere does he say that this fact is present for all integrable groups.\\
+\\
+\textbf{3. } Engel is the first to prove the converse of Theorem III, namely that any group of rank zero is integrable\footnote{Umlauf, loc. cit., p. 35 sqq.}. Here is his proof, slightly modified.\\
+\\
+Let us first notice that, according to Th. IV of Chap. II, \emph{any subgroup of a group of rank zero is itself of rank zero}.\\
+\\
+Moreover, let us recall the following theorem, proved by Lie\footnote{Lie, \emph{Transformationsgruppen}, I, p. 596 sqq., and III, p. 682.}, namely that \emph{if a group of order $r$ contains an integrable subgroup of order $q <r$, this subgroup is at least contained in a subgroup of order $q + 1$}.\\
+\\
+That being the case, to prove that any group of rank zero is integrable, it suffices to show that any group of rank zero of order $r$ contains at least one invariant subgroup of order $r-1$. Now this is true for $r = 2$, because then we have $[X_1,X_2] = 0$. Suppose this is proved for $r = 1,2,\ldots, s$. I claim that the theorem is true for $r = s + 1$. Indeed, let us consider in $G_{s + 1}$ of rank zero an arbitrary infinitesimal transformation. It is contained at least in a necessarily integrable two-parameter subgroup, say $g_2$; $g_2$ is therefore contained in a subgroup $g_3$ of rank zero and therefore integrable if $3 \le s$, $g_3$ in a subgroup $g_4$, and so on. Finally we arrive at a subgroup $g_s$ of order $s = r-1$. I claim that this subgroup of order $r-1$ is invariant. For this it suffices to show that any one of its transformations combined with a certain transformation not being part of $g_s$ gives rise to a transformation being part of $g_s$. Now let $X_1f$ be any transformation of $g_s$. We can find (II, 7) $r-1$ other transformations $X_2f,\ldots,X_{r-1}f$ such that we have
+\begin{equation*}
+	[X_1,X_i] = \sum_{j=1}^{i-1}c_{1ij}X_jf, \;\; (i=2,3,\ldots,r).
+\end{equation*}
+Let $X_qf$ be the first of these transformations which is not part of $g_s$. We then have
+\begin{equation*}
+	[X_1,X_q]=c_{1q1}X_1f+c_{1q2}X_2f+\dots+c_{1,q,q-1}X_{q-1}f,
+\end{equation*}
+which is to say that $[X_1,X_q]$ is part of $g_s$.  {C.Q.F.D.}\\
+\\
+Any group of rank zero is therefore integrable. As a result, we can give its structure the form (\ref{eq55}), where now all the constants cjii are zero:
+\begin{equation} \label{eq57}
+	[X_i,X_{i+j}]=\sum_{s=1}^{i-1}c_{i,i+j,s}X_sf.
+\end{equation}\\
+\\
+\textbf{Theorem IV}. - \emph{The necessary and sufficient condition for a group to be integrable is that its derived group is of zero rank.}\\
+\\
+We see from equation (\ref{eq57}) that \emph{any group of rank zero contains at least one distinguished infinitesimal transformation}\footnote{Cf. Umlauf, loc. cit., p. 40, Satz 12.}, namely $X_1f$, and that \emph{its derived group is of order r-2 at most}.\\
+\\
+\textbf{4.} We can give an extremely simple criterion to recognize if a group is integrable or not. \emph{It suffices,} in fact, \emph{that the group derived from a group $G$ of order $r$ identically cancels the coefficient $\psi_2(e)$ of the characteristic equation of $G$ for $G$ to be integrable}.\\
+\\
+Because if $G$ were not integrable, it would have an invariant subgroup, namely one of its successive derived groups, which would be its own derived group. Now for this invariant subgroup, $\psi_2(e)$ would be identically zero. Moreover, it would be the same for $\psi_1 (e)$, since the group derived from $G$ cancels any linear invariant of the adjoint group and in particular $\psi_1$. We would therefore have a certain group of order $q$ for which the characteristic equation would be of the form
+\begin{equation} \label{eq58}
+	\omega^q-\psi_3(e)\omega^{q-3}+\psi_4(e)\omega^{q-4}\dots\pm\psi_{q-1}(e)\omega=0,
+\end{equation}
+and which would be its own derived group. Now, let us put this group in the reduced form relating to any \emph{general} transformation. By using the notations of Ch. II, \S 10 sqq., we see that all the transformations of the $\gamma$ subgroup: $X_{01}f,X_{02}f,\ldots,X_{0k}f$, are deduced linearly from the brackets $[X_{0i},X_{0j}]$ and $[X_{\alpha i},X_{\alpha^\prime j}]$, or $\omega_{\alpha^\prime}=-\omega_\alpha$,  $(\alpha = 1,2,\ldots,p)$. Now, according to Theorem XII (II, 13), for each of these transformations $[X_{0i},X_{0j}]$, $[X_{\alpha i},X_{\alpha^\prime j}]$, the roots of equation (\ref{eq58}) are \emph{real} multiples of one of them, which, according to the theory of equations, is only possible if \emph{all these roots are null}. We can therefore assume that for $k$ independent transformations of the $\gamma$ subgroup, the characteristic equation has all null roots, and hence it is the same for the characteristic equation relating to the $\gamma$ subgroup itself. This is only possible if $k = r$, that is to say if the group is of rank zero. But then it is integrable and cannot be its own derived group.\\
+\\
+\textbf{Theorem V}. - \emph{The necessary and sufficient condition for a group of order $r$ to be integrable is that the transformations of its derived group identically cancel the coefficient $\psi_2(e)$ of $\omega^{r-2}$ in its characteristic equations.}\\
+\\
+Note that if $X_{m+1}f,X_{m+2}f,\ldots,X_rf$ form the group derived from an integrable group $G$, $\psi_2(e)$ depends only on $e_1,e_2,\ldots,e_3$, and reciprocally, according to Theorem V, if $\psi_2(e)$ depends only on $e_1,e_2,\ldots,e_m$, the group is integrable. So the equations
+\begin{equation*}
+	\frac{\partial{\psi_2}}{\partial{e_{m+1}}}=\frac{\partial{\psi_2}}{\partial{e_{m+2}}}=\dots=\frac{\partial{\psi_2}}{\partial{e_r}}=0
+\end{equation*}
+can be reduced to identities. So in the general case the group will be integrable if the equations
+\begin{equation*}
+	\sum_{\rho=1}^r c_{ik\rho}\frac{\partial{\psi_2}}{\partial{e_\rho}}=0, \;\; (i,k=1,2,\ldots,r)
+\end{equation*}
+can be reduced to identities, which, taking into account the expression of $psi_2(e)$ and the relations between the $c_{iks}$, can be written
+\begin{equation} \label{eq59}
+	\sum_{\lambda,\mu,\nu = 1}^r c_{i\lambda\mu} c_{j\mu\nu} c_{k\nu\lambda} =
+	\sum_{\lambda,\mu,\nu = 1}^r c_{i\mu\lambda} c_{j\nu\mu} c_{k\lambda\nu}, \;\; (i,j,k=1,2,\ldots,r).
+\end{equation}
+\emph{Equations} (\ref{eq59}) \emph{express the necessary and sufficient conditions for the group to be integrable.}\\
+\\
+\textbf{5.} Let us refer to the theorem stated at the end of chapter 1 and apply it to the invariant $\psi_2(e)$ of the adjoint group. We see that we can state the following propositions, consequences of Theorem V:\\
+\\
+\emph{The linear equations
+\begin{equation*}
+	\frac{\partial{\psi_2}}{\partial{e_i}}=0, \;\; (i=1,2,\ldots,r)
+\end{equation*}
+define an integrable invariant subgroup.\\
+\\
+If $\alpha_{i1}X_1f+\alpha_{i2}X_2f+\dots+\alpha_{ir}X_rf$, $(i=1,2,\ldots,m)$ are $m$ independent infinitesimal transformations of an invariant subgroup $g$ of order $m$ of the group $G$: $X_1f,X_2f,\ldots,X_rf$, the equations
+\begin{equation*}
+	\alpha_{i1}\frac{\partial{\psi_2}}{\partial{e_1}}+\alpha_{i2}\frac{\partial{\psi_2}}{\partial{e_2}}+
+	\ldots+\alpha_{ir}\frac{\partial{\psi_2}}{\partial{e_r}}=0, \;\; (i=1,2,\ldots,m)
+\end{equation*}
+define an invariant subgroup $g^\prime$ of $G$, and the transformations common to this invariant subgroup $g^\prime$ and $g$ form an integrable invariant subgroup of $G$,} because for any transformation common to $g$ and $g^\prime$, $\psi_2$ vanishes.\\
+\\
+In particular, \emph{if $g$ is the group derived from $G$, $g^\prime$ is an integrable invariant subgroup}. We will see later that this is the largest integrable invariant subgroup of $G$; it is defined by the equations
+\begin{equation}
+	\sum_{\rho=1}^r c_{ik\rho}\frac{\partial{\psi_2}}{\partial{e_\rho}}=0, \;\; (i,k=1,2,\ldots,r).
+\end{equation}\\
+\\
+\textbf{6.} Returning to any group of order $r$, integrable or not, put in the reduced form relative to a given $\gamma$ subgroup. Let $e_{\alpha 1}X_{\alpha 1}f+\ldots+e_{\alpha m_\alpha}X_{\alpha m_\alpha}f$ always be the most general infinitesimal transformation belonging to the $\omega_\alpha$ root. Let $E_{01}f,E_{02}f,\ldots,E_{0k}f$ be the subgroup of the adjoint group that corresponds to the $\gamma$ subgroup.\\
+\\
+This is a linear and homogeneous group of zero rank, and therefore integrable, which exchanges the points of the space $e_{\alpha 1}, e_{\alpha 2}, \ldots,e_{\alpha m_\alpha}$ with each other. Therefore, according to a remark already made (\S 1), it leaves a point of this space invariant, a line passing through this point, etc. In other words we can always choose $X_{\alpha_1}f,\ldots,X_{\alpha m_\alpha}f$ in such a way that we have
+\begin{equation} \label{eq61}
+	[X_{0i},X_{\alpha j}]=\sum_{\rho=1}^j c_{(0i)(\alpha j)(\alpha\rho)}X_{\alpha\rho}f,\;\;
+	(i=1,2,\ldots,k;\,j=1,2,\ldots,m_\alpha)
+\end{equation}
+and moreover we have
+\begin{equation}
+	c_{(0i)(\alpha j)(\alpha j)} = \omega_\alpha^{(i)}.
+\end{equation}
+In particular we have, regardless of $i$,
+\begin{equation*}
+	[X_{0i},X_{\alpha 1}] = \omega_\alpha^{(i)}X_{\alpha 1}f,\;\; (i=1,2,\ldots,k).
+\end{equation*}
+Killing makes regular use of equations (\ref{eq61}), which he does not prove, except in the case where all the transformations of the subgroup $\gamma$ commute between themselves. But even in this case the demonstration he gives is not rigorous\footnote{V. Killing, Z.v.G., II, p. 10, et III, p. 68.}. He says in effect that if, for each transformation $\mathscr{X}_0f$ of $\gamma$, there are for example at least three transformations $X_{\alpha 1}f,X_{\alpha 2}f,X_{\alpha 3}f$, such that
+\begin{align*}
+	&[\mathscr{X}_0,X_{\alpha 1}] = \omega_\alpha X_{\alpha 1}f,&
+	&[\mathscr{X}_0,X_{\alpha 2}] = \omega_\alpha X_{\alpha 2}f,&
+	&[\mathscr{X}_0,X_{\alpha 3}] = \omega_\alpha X_{\alpha 3}f,
+\end{align*}
+and if there are only three in general, for example for $\mathscr{X}_0f$, we will have, for any i,
+\begin{align*}
+	&[X_{0 i},X_{\alpha 1}] = \omega_\alpha^{(i)} X_{\alpha 1}f,&
+	&[X_{0 i},X_{\alpha 2}] = \omega_\alpha^{(i)} X_{\alpha 2}f,&
+	&[X_{0 i},X_{\alpha 3}] = \omega_\alpha^{(i)} X_{\alpha 3}f.
+\end{align*}
+However, this is not correct: it suffices to take $k = 2$, and
+\begin{align*}
+	&[X_{0 1},X_{\alpha 1}] = X_{\alpha 1}f,&
+	&[X_{0 1},X_{\alpha 2}] = X_{\alpha 2}f,&
+	&[X_{0 1},X_{\alpha 3}] = X_{\alpha 3}f + X_{\alpha 1}f,\\
+	&[X_{0 2},X_{\alpha 1}] = X_{\alpha 1}f,&
+	&[X_{0 2},X_{\alpha 2}] = X_{\alpha 2}f + X_{\alpha 1}f,&
+	&[X_{0 2},X_{\alpha 3}] = X_{\alpha 3}f.
+\end{align*}\\
+\\
+\textbf{7.} The results stated and demonstrated in \S 1, 2 and 3 are due in large part to Lie; nevertheless the proof of the property of zero-rank groups being integrable was given for the first time by Engel. As for \S 4 and 5, they relate to entirely new results.\\
+\\
+Killing (Z.v.G., I, p. 285 sqq.) also made a special study of zero-rank groups; but his reasoning is lacking in rigor and he claims inaccurate theorems\footnote{Killing, Z.v.G., I, p. 288; regarding this see Umlauf, loc. cit., p. 45, note.}.
+\pagebreak
+
+
+\part*{\uline{Second Part}}
+\section*{Chapter IV: Semi-Simple Groups. Properties of the Characteristic
+Equations of a Simple Group.}
+
+\textbf{1.} Among the non-integrable groups, a very important class
+is formed by the groups of order $r>1$ which do not admit an invariant
+integrable subgroup. We will call these \emph{semi-simple} groups.
+Among semi-simple groups, those of order $r>1$ which do not admit
+an invariant subgroup are said to be \emph{simple}. It follows from
+this that a simple group is its own derivative group and therefore
+is not integrable.\\
+\\
+Recall that, according to the previous chapter, for a group to be
+semi-simple, the equations $\frac{\partial \psi_2}{\partial e_i}$
+must lead to $e_1=e_2=\ldots=e_r=0$. \emph{The coefficient $\psi_2(e)$
+of the characteristic equation of a semi-simple group is therefore
+reducible to a sum of $r$ independent squares}.\\
+\\
+Conversely, if the discriminant of the quadratic form $\psi_2(e)$
+is different from zero, the group $G$ does not admit any integrable
+invariant subgroup; because if it were to admit one, $g$, by taking
+the successive derivative groups of $g$, we would end up finding
+one, $g^\prime$, invariant in $G$ and forms either of a single infinitesimal
+transformation, or of infinitesimal transformation exchangeable between
+them. If $X_{m+1}f,X_{m+2}f,\ldots,X_rf$ are these transformations,
+we immediately verify that the characteristic determinant does not
+depend on $e_{m+1},e_{m+2},\ldots,e_r$, and therefore $\psi_2(e)$
+is reducible to a sum of $m$ independent squares at most.\\
+\\
+\\
+\\
+\\
+\\
+TODO\pagebreak
+
+\section*{Chapter V: Simple Integer Systems of Order $l$. Simple Groups of
+Rank $l$.}
+
+\textbf{1.} This chapter is devoted to the calculations I indicated
+in the previous chapter.\\
+\\
+We first have to determine all the systems of inequivalent simple
+integers $a_{ij}$ of order l. This determination will be simplified
+by the remark already made (IV, 9) that any simple system of order
+$p$ contains at least one simple subsystem of order $p-1$; if therefore
+we have determined all the inequivalent simple systems of order $p-1$,
+we have, for each of them, only $2(p-1)$ integers to be determined
+so as to satisfy the conditions of Theorem X ( IV, 8). We will then
+have, according to what was said in the previous chapter (IV, 10)
+to determine $2(p-1)$ new integers so that the total determinant
+is zero and to verify that one of the p new roots can obtained by
+means of the other $p-1$.\\
+\\
+We start with the simplest values of $p$.\\
+\\
+For $p=1$ there is only one system $a_{11}=-2$, which forms the
+two roots $\pm \omega_1$.\\
+\\
+Let us start from this system and seek first to determine $a_{12}$
+and $a_{21}$ in such a way that the determinant satisfies\begin{equation*}
+	a_{11}a_{22}-a_{12}a_{21}=4-a_{12}a_{21}=0;
+\end{equation*}requiring either $a_{12}=a_{21}=\pm2$, or $a_{12}=4a_{21}=\pm4$,
+or $a_{21}=a_{12}=\pm4$. The last two cases give either $\omega_1=\mp 2\omega_2$,
+or $\omega_2=\mp 2\omega_1$, and both are excluded. The case $\omega_2=\pm \omega_1$
+remains; so we cannot have any other root than $\pm \omega_1$.\\
+\\
+We now determine $a_{12}$ and $a_{21}$ in such a way that \begin{equation*}
+	0<a_{11}a_{22}-a_{12}a_{21}\le 4
+\end{equation*}and that the obtained system of order 2 is simple; thus it is necessary
+$a_{12}a_{21}=1,2$ or $3$. Since we can always change w2 to -w2
+if necessary, and also exchange w1 and w2, we see that there are three
+simple systems of order 2: \begin{align*}
+&1^\circ & a_{11}&=a_{22}=-2, &a_{12}=a_{21}&=-1; \\
+&2^\circ & a_{11}&=a_{22}=a_{12}=-2, & a_{21}&=-1;\\
+&3^\circ & a_{11}&=a_{22}=-2, & a_{12}&=-3, &a_{21}&=-1.
+\end{align*}\\
+TODO
+\end{document}

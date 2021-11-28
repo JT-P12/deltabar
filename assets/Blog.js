@@ -1,16 +1,11 @@
 import React from "react";
-import Head from "./Head";
 import Main from "./Main";
-import About from "./About";
-import Footer from "./Footer";
+import MathJaxContext from "better-react-mathjax"
 
 function Blog() {
     return (
             <div class="body bg-color-dark-scale-1">
-                <Head />
-                <Main />
-                <About />
-                <Footer />
+                    <Main />
             </div>
         );
 }
